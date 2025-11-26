@@ -58,7 +58,7 @@ class _HabitsTabState extends State<HabitsTab> {
             _buildSortPanel(context),
             Expanded(
               child: ListView(
-                padding: EdgeInsets.all(Styles.getGap('L')),
+                padding: EdgeInsets.symmetric(horizontal: Styles.getGap('L')),
                 children: [
                   if (todayHabits.isNotEmpty) ...[
                     ...todayHabits
@@ -102,76 +102,144 @@ class _HabitsTabState extends State<HabitsTab> {
 
   // Виджет панели сортировки
   Widget _buildSortPanel(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(Styles.getGap('M')),
-      decoration: BoxDecoration(
-        color: Styles.fargroundColor,
-        border: Border(
-          bottom: BorderSide(color: Styles.habitFormBorderColor, width: 1),
+    return Padding(
+        padding: EdgeInsets.symmetric(
+          horizontal: Styles.getGap('L'),
+          vertical: Styles.getGap('M'),
         ),
-      ),
-      child: Row(
-        children: [
-          Expanded(
-            child: DropdownButton<String>(
-              value: _sortBy,
-              isExpanded: true,
-              underline: Container(),
-              items: [
-                DropdownMenuItem(
-                  value: 'title',
-                  child: Text(context.l10n.sortByTitle),
-                ),
-                DropdownMenuItem(
-                  value: 'experience',
-                  child: Text(context.l10n.sortByExperience),
-                ),
-                DropdownMenuItem(
-                  value: 'completionStatus',
-                  child: Text(context.l10n.sortByCompletionStatus),
-                ),
-                DropdownMenuItem(
-                  value: 'scheduleType',
-                  child: Text(context.l10n.sortByScheduleType),
-                ),
-                DropdownMenuItem(
-                  value: 'karmaLevel',
-                  child: Text(context.l10n.sortByKarma),
-                ),
-                DropdownMenuItem(
-                  value: 'completionCount',
-                  child: Text(context.l10n.sortByCompletionCount),
-                ),
-                DropdownMenuItem(
-                  value: 'minCompletionCount',
-                  child: Text(context.l10n.sortByMinCompletionCount),
-                ),
-              ],
-              onChanged: (value) {
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            IconButton(
+              icon: Row(
+                mainAxisSize: MainAxisSize
+                    .min, // чтобы Row занимал только необходимую ширину
+                children: [
+                  _ascending
+                      ? Icon(Styles.ascendingSortIcon.icon,
+                          color: Styles.habitAccentColor)
+                      : Icon(Styles.descendingSortIcon.icon,
+                          color: Styles.habitAccentColor),
+                  Icon(Styles.sortLabelIcon.icon,
+                      color: Styles.habitAccentColor),
+                ],
+              ),
+              //visualDensity: VisualDensity.minimumDensity,
+              //padding: EdgeInsets.only(left: 4, right: 4, top: 2, bottom: 2),
+              onPressed: () {
                 setState(() {
-                  _sortBy = value!;
+                  _ascending = !_ascending;
                 });
               },
+              tooltip: _ascending
+                  ? context.l10n.sortAscending
+                  : context.l10n.sortDescending,
             ),
-          ),
-          SizedBox(width: Styles.getGap('M')),
-          IconButton(
-            icon: Icon(
-              _ascending ? Icons.arrow_upward : Icons.arrow_downward,
-              color: Styles.habitAccentColor,
+            Expanded(
+              child: DropdownButton<String>(
+                padding: EdgeInsets.all(Styles.getGap('S')),
+                borderRadius: BorderRadius.circular(Styles.getGap('XL')),
+                value: _sortBy,
+                isExpanded: true,
+                isDense: true, // Уменьшает внутренние отступы
+                underline: Container(), // Убирает стандартную линию
+                icon: Icon(
+                  Icons.arrow_drop_down_rounded,
+                  color: Styles.habitAccentColor,
+                  //size: 20, // Уменьшенный размер иконки
+                ),
+                iconSize: 0,
+                style: TextStyle(
+                  color: Styles.habitAccentColor,
+                  fontWeight: FontWeight.bold,
+                  fontSize: Styles.getFontSize('M'),
+                  overflow: TextOverflow.ellipsis,
+                ),
+                dropdownColor: Styles.fargroundColor,
+                focusColor: Styles.transparentColor,
+                items: [
+                  DropdownMenuItem(
+                    value: 'title',
+                    child: Text(
+                      context.l10n.sortByTitle,
+                      style: TextStyle(
+                        color: Styles.habitAccentColor,
+                        fontSize: Styles.getFontSize('M'),
+                      ),
+                    ),
+                  ),
+                  DropdownMenuItem(
+                    value: 'experience',
+                    child: Text(
+                      context.l10n.sortByExperience,
+                      style: TextStyle(
+                        color: Styles.habitAccentColor,
+                        fontSize: Styles.getFontSize('M'),
+                      ),
+                    ),
+                  ),
+                  DropdownMenuItem(
+                    value: 'completionStatus',
+                    child: Text(
+                      context.l10n.sortByCompletionStatus,
+                      style: TextStyle(
+                        color: Styles.habitAccentColor,
+                        fontSize: Styles.getFontSize('M'),
+                      ),
+                    ),
+                  ),
+                  DropdownMenuItem(
+                    value: 'scheduleType',
+                    child: Text(
+                      context.l10n.sortByScheduleType,
+                      style: TextStyle(
+                        color: Styles.habitAccentColor,
+                        fontSize: Styles.getFontSize('M'),
+                      ),
+                    ),
+                  ),
+                  DropdownMenuItem(
+                    value: 'karmaLevel',
+                    child: Text(
+                      context.l10n.sortByKarma,
+                      style: TextStyle(
+                        color: Styles.habitAccentColor,
+                        fontSize: Styles.getFontSize('M'),
+                      ),
+                    ),
+                  ),
+                  DropdownMenuItem(
+                    value: 'completionCount',
+                    child: Text(
+                      context.l10n.sortByCompletionCount,
+                      style: TextStyle(
+                        color: Styles.habitAccentColor,
+                        fontSize: Styles.getFontSize('M'),
+                      ),
+                    ),
+                  ),
+                  DropdownMenuItem(
+                    value: 'minCompletionCount',
+                    child: Text(
+                      context.l10n.sortByMinCompletionCount,
+                      style: TextStyle(
+                        color: Styles.habitAccentColor,
+                        fontSize: Styles.getFontSize('M'),
+                      ),
+                    ),
+                  ),
+                ],
+                onChanged: (value) {
+                  setState(() {
+                    _sortBy = value!;
+                  });
+                },
+              ),
             ),
-            onPressed: () {
-              setState(() {
-                _ascending = !_ascending;
-              });
-            },
-            tooltip: _ascending
-                ? context.l10n.sortAscending
-                : context.l10n.sortDescending,
-          ),
-        ],
-      ),
-    );
+
+            // Кнопка направления сортировки
+          ],
+        ));
   }
 
   // Функция сортировки привычек

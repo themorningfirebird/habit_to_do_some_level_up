@@ -34,7 +34,6 @@ class _PlayerTabState extends State<PlayerTab> {
     return Column(
       children: [
         _buildStatsCard(player),
-        SizedBox(height: Styles.getGap('L')),
         Expanded(child: _buildTodaysOverview(false)),
       ],
     );
@@ -46,7 +45,6 @@ class _PlayerTabState extends State<PlayerTab> {
       child: Column(
         children: [
           _buildStatsCard(player),
-          SizedBox(height: Styles.getGap('L')),
           Expanded(child: _buildTodaysOverview(true)),
         ],
       ),
@@ -92,8 +90,6 @@ class _PlayerTabState extends State<PlayerTab> {
 
             // Прогресс уровня
             _buildLevelProgress(player, context),
-
-            SizedBox(height: Styles.getGap('L')),
           ],
         ),
       ),

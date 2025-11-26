@@ -71,7 +71,7 @@ class _TasksTabState extends State<TasksTab> {
             _buildSortPanel(context),
             Expanded(
               child: ListView(
-                padding: EdgeInsets.all(Styles.getGap('L')),
+                padding: EdgeInsets.symmetric(horizontal: Styles.getGap('L')),
                 children: [
                   if (pendingTasks.isNotEmpty) ...[
                     ...pendingTasks
@@ -115,68 +115,123 @@ class _TasksTabState extends State<TasksTab> {
 
   // Виджет панели сортировки
   Widget _buildSortPanel(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(Styles.getGap('M')),
-      decoration: BoxDecoration(
-        color: Styles.fargroundColor,
-        border: Border(
-          bottom: BorderSide(color: Styles.taskFormBorderColor, width: 1),
+    return Padding(
+        padding: EdgeInsets.symmetric(
+          horizontal: Styles.getGap('L'),
+          vertical: Styles.getGap('M'),
         ),
-      ),
-      child: Row(
-        children: [
-          Expanded(
-            child: DropdownButton<String>(
-              value: _sortBy,
-              isExpanded: true,
-              underline: Container(),
-              items: [
-                DropdownMenuItem(
-                  value: 'title',
-                  child: Text(context.l10n.sortByTitle),
-                ),
-                DropdownMenuItem(
-                  value: 'experience',
-                  child: Text(context.l10n.sortByExperience),
-                ),
-                DropdownMenuItem(
-                  value: 'priority',
-                  child: Text(context.l10n.sortByPriority),
-                ),
-                DropdownMenuItem(
-                  value: 'category',
-                  child: Text(context.l10n.sortByCategory),
-                ),
-                DropdownMenuItem(
-                  value: 'dueDate',
-                  child: Text(context.l10n.sortByDueDate),
-                ),
-              ],
-              onChanged: (value) {
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            IconButton(
+              icon: Row(
+                mainAxisSize: MainAxisSize
+                    .min, // чтобы Row занимал только необходимую ширину
+                children: [
+                  _ascending
+                      ? Icon(Styles.ascendingSortIcon.icon,
+                          color: Styles.taskAccentColor)
+                      : Icon(Styles.descendingSortIcon.icon,
+                          color: Styles.taskAccentColor),
+                  Icon(Styles.sortLabelIcon.icon,
+                      color: Styles.taskAccentColor),
+                ],
+              ),
+              //visualDensity: VisualDensity.minimumDensity,
+              //padding: EdgeInsets.only(left: 4, right: 4, top: 2, bottom: 2),
+              onPressed: () {
                 setState(() {
-                  _sortBy = value!;
+                  _ascending = !_ascending;
                 });
               },
+              tooltip: _ascending
+                  ? context.l10n.sortAscending
+                  : context.l10n.sortDescending,
             ),
-          ),
-          SizedBox(width: Styles.getGap('M')),
-          IconButton(
-            icon: Icon(
-              _ascending ? Icons.arrow_upward : Icons.arrow_downward,
-              color: Styles.taskAccentColor,
+            Expanded(
+              child: DropdownButton<String>(
+                padding: EdgeInsets.all(Styles.getGap('S')),
+                borderRadius: BorderRadius.circular(Styles.getGap('XL')),
+                value: _sortBy,
+                isExpanded: true,
+                isDense: true, // Уменьшает внутренние отступы
+                underline: Container(), // Убирает стандартную линию
+                icon: Icon(
+                  Icons.arrow_drop_down_rounded,
+                  color: Styles.taskAccentColor,
+                  //size: 20, // Уменьшенный размер иконки
+                ),
+                iconSize: 0,
+                style: TextStyle(
+                  color: Styles.taskAccentColor,
+                  fontWeight: FontWeight.bold,
+                  fontSize: Styles.getFontSize('M'),
+                  overflow: TextOverflow.ellipsis,
+                ),
+                dropdownColor: Styles.fargroundColor,
+                focusColor: Styles.transparentColor,
+                items: [
+                  DropdownMenuItem(
+                    value: 'title',
+                    child: Text(
+                      context.l10n.sortByTitle,
+                      style: TextStyle(
+                        color: Styles.taskAccentColor,
+                        fontSize: Styles.getFontSize(
+                            'M'), // Немного уменьшенный шрифт
+                      ),
+                    ),
+                  ),
+                  DropdownMenuItem(
+                    value: 'experience',
+                    child: Text(
+                      context.l10n.sortByExperience,
+                      style: TextStyle(
+                        color: Styles.taskAccentColor,
+                        fontSize: Styles.getFontSize('M'),
+                      ),
+                    ),
+                  ),
+                  DropdownMenuItem(
+                    value: 'priority',
+                    child: Text(
+                      context.l10n.sortByPriority,
+                      style: TextStyle(
+                        color: Styles.taskAccentColor,
+                        fontSize: Styles.getFontSize('M'),
+                      ),
+                    ),
+                  ),
+                  DropdownMenuItem(
+                    value: 'category',
+                    child: Text(
+                      context.l10n.sortByCategory,
+                      style: TextStyle(
+                        color: Styles.taskAccentColor,
+                        fontSize: Styles.getFontSize('M'),
+                      ),
+                    ),
+                  ),
+                  DropdownMenuItem(
+                    value: 'dueDate',
+                    child: Text(
+                      context.l10n.sortByDueDate,
+                      style: TextStyle(
+                        color: Styles.taskAccentColor,
+                        fontSize: Styles.getFontSize('M'),
+                      ),
+                    ),
+                  ),
+                ],
+                onChanged: (value) {
+                  setState(() {
+                    _sortBy = value!;
+                  });
+                },
+              ),
             ),
-            onPressed: () {
-              setState(() {
-                _ascending = !_ascending;
-              });
-            },
-            tooltip: _ascending
-                ? context.l10n.sortAscending
-                : context.l10n.sortDescending,
-          ),
-        ],
-      ),
-    );
+          ],
+        ));
   }
 
   // Функция сортировки задач

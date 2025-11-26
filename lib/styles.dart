@@ -16,6 +16,8 @@ class Styles {
 
   static const Color shadowColor = basicTextColor;
 
+  static const Color transparentColor = Color.fromARGB(0, 255, 255, 255);
+
   static const Color contrastHeaderFontColor = foregroundColor;
 
   static final TextStyle titleFont = TextStyle(
@@ -129,6 +131,21 @@ class Styles {
   static double entryCardSidesWidth = 48;
   static double entryCardRadius = getRadius('M');
 
+  //Sort panels:
+  static final Icon ascendingSortIcon = Icon(
+    Icons.arrow_upward,
+    size: 20,
+  );
+
+  static final Icon descendingSortIcon = Icon(
+    Icons.arrow_downward,
+    size: 20,
+  );
+
+  static final Icon sortLabelIcon = Icon(
+    Icons.sort_rounded,
+    size: 20,
+  );
   //Sizes:
   static double getFontSize(String index) =>
       _fontSize[index] ?? fallbackFontSize;
@@ -326,8 +343,11 @@ class Styles {
 
   static final TextStyle playerStatItemCountFont =
       TextStyle(fontSize: getFontSize('L'), fontWeight: FontWeight.bold);
-  static final TextStyle playerStatItemLabelFont =
-      TextStyle(fontSize: getFontSize('M'), color: subTextColor);
+  static final TextStyle playerStatItemLabelFont = TextStyle(
+    fontSize: getFontSize('M'),
+    color: subTextColor,
+    overflow: TextOverflow.ellipsis,
+  );
   static final TextStyle playerStatItemDetailsFont =
       TextStyle(fontSize: getFontSize('M'), color: lightTextColor);
 
@@ -495,31 +515,10 @@ class Styles {
     5: Color.fromARGB(255, 240, 30, 30)
   };
 
-  static TextStyle getTaskPriorityFont(int index) =>
-      _taskPriorityFont[index] ?? fallbackFont;
-
-  static final Map<int, TextStyle> _taskPriorityFont = {
-    1: TextStyle(
-        fontSize: getFontSize('L'),
-        color: getTaskPriorityColor(1),
-        fontWeight: FontWeight.bold),
-    2: TextStyle(
-        fontSize: getFontSize('L'),
-        color: getTaskPriorityColor(2),
-        fontWeight: FontWeight.bold),
-    3: TextStyle(
-        fontSize: getFontSize('L'),
-        color: getTaskPriorityColor(3),
-        fontWeight: FontWeight.bold),
-    4: TextStyle(
-        fontSize: getFontSize('L'),
-        color: getTaskPriorityColor(4),
-        fontWeight: FontWeight.bold),
-    5: TextStyle(
-        fontSize: getFontSize('L'),
-        color: getTaskPriorityColor(5),
-        fontWeight: FontWeight.bold)
-  };
+  static TextStyle getTaskPriorityFont(int index) => TextStyle(
+      fontSize: getFontSize('L'),
+      color: getTaskPriorityColor(1),
+      fontWeight: FontWeight.bold);
 
   //Task category:
   static Color getTaskCategoryColor(String index) =>
@@ -586,15 +585,8 @@ class Styles {
         size: getIconSize('S'), color: getTaskStateColor('soon'))
   };
 
-  static TextStyle getTaskStateFont(String index) =>
-      _taskStateFont[index] ?? fallbackFont;
-
-  static final Map<String, TextStyle> _taskStateFont = {
-    'completed': TextStyle(color: getTaskStateColor('completed')),
-    'overdue': TextStyle(color: getTaskStateColor('overdue')),
-    "today": TextStyle(color: getTaskStateColor('today')),
-    'soon': TextStyle(color: getTaskStateColor('soon'))
-  };
+  static TextStyle getTaskStateFont(String index) => TextStyle(
+      color: getTaskStateColor('overdue'), overflow: TextOverflow.ellipsis);
 
 //Task form:
   static final Color taskFormFrontColor = taskAccentColor;
