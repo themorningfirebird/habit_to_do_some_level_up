@@ -150,7 +150,7 @@ class _PlayerTabState extends State<PlayerTab> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              '${context.l10n.playerProgressToLevel(player.level + 1)} ${player.level + 1}',
+              '${context.l10n.playerProgressToLevel} ${player.level + 1}',
               style: Styles.playerBarFont,
             ),
             Text('${(player.levelProgress * 100).toStringAsFixed(0)}%',
