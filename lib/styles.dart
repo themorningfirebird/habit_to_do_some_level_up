@@ -517,7 +517,7 @@ class Styles {
 
   static TextStyle getTaskPriorityFont(int index) => TextStyle(
       fontSize: getFontSize('L'),
-      color: getTaskPriorityColor(1),
+      color: getTaskPriorityColor(index),
       fontWeight: FontWeight.bold);
 
   //Task category:
@@ -586,7 +586,7 @@ class Styles {
   };
 
   static TextStyle getTaskStateFont(String index) => TextStyle(
-      color: getTaskStateColor('overdue'), overflow: TextOverflow.ellipsis);
+      color: getTaskStateColor(index), overflow: TextOverflow.ellipsis);
 
 //Task form:
   static final Color taskFormFrontColor = taskAccentColor;
