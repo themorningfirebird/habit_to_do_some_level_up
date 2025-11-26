@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:habit_to_do_some_level_up/extensions/localization_extension.dart';
+import 'package:habit_to_do_some_level_up/models/task.dart';
+import 'package:habit_to_do_some_level_up/screens/add_task_screen.dart';
 import 'package:habit_to_do_some_level_up/services/experience_service.dart';
+import 'package:habit_to_do_some_level_up/services/hive_service.dart';
+import 'package:habit_to_do_some_level_up/services/sorter.dart';
 import 'package:habit_to_do_some_level_up/styles.dart';
-import '../screens/add_task_screen.dart';
-import '../services/hive_service.dart';
-import '../models/task.dart';
-import '../widgets/task_item_widget.dart';
+import 'package:habit_to_do_some_level_up/widgets/sort_panel.dart';
+import 'package:habit_to_do_some_level_up/widgets/task_item_widget.dart';
 
 class TasksTab extends StatefulWidget {
   final Function(Task, bool) onTaskToggle;
@@ -58,7 +60,7 @@ class _TasksTabState extends State<TasksTab> {
         }
 
         // Сортируем задачи
-        final sortedTasks = _sortTasks(tasks);
+        final sortedTasks = Sorter.sortTasks(tasks, _sortBy, _ascending);
 
         final pendingTasks =
             sortedTasks.where((task) => !task.completed).toList();
@@ -68,7 +70,67 @@ class _TasksTabState extends State<TasksTab> {
         return Column(
           children: [
             // Панель сортировки
-            _buildSortPanel(context),
+            SortPanel(
+              sortBy: _sortBy,
+              ascending: _ascending,
+              onSortByChanged: (value) => setState(() => _sortBy = value),
+              onAscendingChanged: (value) => setState(() => _ascending = value),
+              sortOptions: [
+                DropdownMenuItem(
+                  value: 'title',
+                  child: Text(
+                    context.l10n.sortByTitle,
+                    style: TextStyle(
+                      color: Styles.taskAccentColor,
+                      fontSize: Styles.getFontSize('M'),
+                    ),
+                  ),
+                ),
+                DropdownMenuItem(
+                  value: 'experience',
+                  child: Text(
+                    context.l10n.sortByExperience,
+                    style: TextStyle(
+                      color: Styles.taskAccentColor,
+                      fontSize: Styles.getFontSize('M'),
+                    ),
+                  ),
+                ),
+                DropdownMenuItem(
+                  value: 'priority',
+                  child: Text(
+                    context.l10n.sortByPriority,
+                    style: TextStyle(
+                      color: Styles.taskAccentColor,
+                      fontSize: Styles.getFontSize('M'),
+                    ),
+                  ),
+                ),
+                DropdownMenuItem(
+                  value: 'category',
+                  child: Text(
+                    context.l10n.sortByCategory,
+                    style: TextStyle(
+                      color: Styles.taskAccentColor,
+                      fontSize: Styles.getFontSize('M'),
+                    ),
+                  ),
+                ),
+                DropdownMenuItem(
+                  value: 'dueDate',
+                  child: Text(
+                    context.l10n.sortByDueDate,
+                    style: TextStyle(
+                      color: Styles.taskAccentColor,
+                      fontSize: Styles.getFontSize('M'),
+                    ),
+                  ),
+                ),
+              ],
+              accentColor: Styles.taskAccentColor,
+              tooltipAscending: context.l10n.sortAscending,
+              tooltipDescending: context.l10n.sortDescending,
+            ),
             Expanded(
               child: ListView(
                 padding: EdgeInsets.symmetric(horizontal: Styles.getGap('L')),
@@ -111,158 +173,6 @@ class _TasksTabState extends State<TasksTab> {
         );
       },
     );
-  }
-
-  // Виджет панели сортировки
-  Widget _buildSortPanel(BuildContext context) {
-    return Padding(
-        padding: EdgeInsets.symmetric(
-          horizontal: Styles.getGap('L'),
-          vertical: Styles.getGap('M'),
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            IconButton(
-              icon: Row(
-                mainAxisSize: MainAxisSize
-                    .min, // чтобы Row занимал только необходимую ширину
-                children: [
-                  _ascending
-                      ? Icon(Styles.ascendingSortIcon.icon,
-                          color: Styles.taskAccentColor)
-                      : Icon(Styles.descendingSortIcon.icon,
-                          color: Styles.taskAccentColor),
-                  Icon(Styles.sortLabelIcon.icon,
-                      color: Styles.taskAccentColor),
-                ],
-              ),
-              //visualDensity: VisualDensity.minimumDensity,
-              //padding: EdgeInsets.only(left: 4, right: 4, top: 2, bottom: 2),
-              onPressed: () {
-                setState(() {
-                  _ascending = !_ascending;
-                });
-              },
-              tooltip: _ascending
-                  ? context.l10n.sortAscending
-                  : context.l10n.sortDescending,
-            ),
-            Expanded(
-              child: DropdownButton<String>(
-                padding: EdgeInsets.all(Styles.getGap('S')),
-                borderRadius: BorderRadius.circular(Styles.getGap('XL')),
-                value: _sortBy,
-                isExpanded: true,
-                isDense: true, // Уменьшает внутренние отступы
-                underline: Container(), // Убирает стандартную линию
-                icon: Icon(
-                  Icons.arrow_drop_down_rounded,
-                  color: Styles.taskAccentColor,
-                  //size: 20, // Уменьшенный размер иконки
-                ),
-                iconSize: 0,
-                style: TextStyle(
-                  color: Styles.taskAccentColor,
-                  fontWeight: FontWeight.bold,
-                  fontSize: Styles.getFontSize('M'),
-                  overflow: TextOverflow.ellipsis,
-                ),
-                dropdownColor: Styles.fargroundColor,
-                focusColor: Styles.transparentColor,
-                items: [
-                  DropdownMenuItem(
-                    value: 'title',
-                    child: Text(
-                      context.l10n.sortByTitle,
-                      style: TextStyle(
-                        color: Styles.taskAccentColor,
-                        fontSize: Styles.getFontSize(
-                            'M'), // Немного уменьшенный шрифт
-                      ),
-                    ),
-                  ),
-                  DropdownMenuItem(
-                    value: 'experience',
-                    child: Text(
-                      context.l10n.sortByExperience,
-                      style: TextStyle(
-                        color: Styles.taskAccentColor,
-                        fontSize: Styles.getFontSize('M'),
-                      ),
-                    ),
-                  ),
-                  DropdownMenuItem(
-                    value: 'priority',
-                    child: Text(
-                      context.l10n.sortByPriority,
-                      style: TextStyle(
-                        color: Styles.taskAccentColor,
-                        fontSize: Styles.getFontSize('M'),
-                      ),
-                    ),
-                  ),
-                  DropdownMenuItem(
-                    value: 'category',
-                    child: Text(
-                      context.l10n.sortByCategory,
-                      style: TextStyle(
-                        color: Styles.taskAccentColor,
-                        fontSize: Styles.getFontSize('M'),
-                      ),
-                    ),
-                  ),
-                  DropdownMenuItem(
-                    value: 'dueDate',
-                    child: Text(
-                      context.l10n.sortByDueDate,
-                      style: TextStyle(
-                        color: Styles.taskAccentColor,
-                        fontSize: Styles.getFontSize('M'),
-                      ),
-                    ),
-                  ),
-                ],
-                onChanged: (value) {
-                  setState(() {
-                    _sortBy = value!;
-                  });
-                },
-              ),
-            ),
-          ],
-        ));
-  }
-
-  // Функция сортировки задач
-  List<Task> _sortTasks(List<Task> tasks) {
-    List<Task> sortedList = List.from(tasks);
-
-    sortedList.sort((a, b) {
-      int comparison = 0;
-
-      switch (_sortBy) {
-        case 'title':
-          comparison = a.title.compareTo(b.title);
-          break;
-        case 'experience':
-          comparison = a.experience.compareTo(b.experience);
-          break;
-        case 'priority':
-          comparison = a.priority.compareTo(b.priority);
-          break;
-        case 'category':
-          comparison = a.category.compareTo(b.category);
-          break;
-        case 'dueDate':
-          comparison = a.dueDate.compareTo(b.dueDate);
-          break;
-      }
-
-      return _ascending ? comparison : -comparison;
-    });
-
-    return sortedList;
   }
 
   Widget _buildTaskItem(Task task, BuildContext context) {
