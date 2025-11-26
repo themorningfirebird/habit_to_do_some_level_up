@@ -94,9 +94,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get defaultGoal => 'Прокачать свою жизнь!';
 
   @override
-  String playerProgressToLevel(Object level) {
-    return 'Прогресс до уровня';
-  }
+  String get playerProgressToLevel => 'Прогресс до уровня';
 
   @override
   String get overdue => 'Просрочено';
@@ -500,34 +498,34 @@ class AppLocalizationsRu extends AppLocalizations {
   String get weekdaySunday => 'Вс';
 
   @override
-  String get sortByTitle => 'По названию';
+  String get sortByTitle => 'Название';
 
   @override
-  String get sortByExperience => 'По опыту';
+  String get sortByExperience => 'Опыт';
 
   @override
-  String get sortByCompletionStatus => 'По завершенности';
+  String get sortByScheduleType => 'Интервал';
 
   @override
-  String get sortByScheduleType => 'По типу периодичности';
+  String get sortByCompletionStatus => 'Выполнение';
 
   @override
-  String get sortByKarma => 'По серии';
+  String get sortByKarma => 'Серия';
 
   @override
-  String get sortByCompletionCount => 'По количеству выполнения';
+  String get sortByCompletionCount => 'Количество';
 
   @override
-  String get sortByMinCompletionCount => 'По минимуму для завершения';
+  String get sortByMinCompletionCount => 'Минимум';
 
   @override
-  String get sortByPriority => 'По приоритету';
+  String get sortByPriority => 'Приоритет';
 
   @override
-  String get sortByCategory => 'По категории';
+  String get sortByCategory => 'Категория';
 
   @override
-  String get sortByDueDate => 'По дате';
+  String get sortByDueDate => 'Дата';
 
   @override
   String get sortAscending => 'Сортировка по возрастанию';

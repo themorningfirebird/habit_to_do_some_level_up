@@ -9,7 +9,7 @@ class AppLocalizationsFi extends AppLocalizations {
   AppLocalizationsFi([String locale = 'fi']) : super(locale);
 
   @override
-  String get appTitle => 'Tapa Parannusta!';
+  String get appTitle => 'Tottu Tasonousuun!';
 
   @override
   String get home => 'Koti';
@@ -27,10 +27,10 @@ class AppLocalizationsFi extends AppLocalizations {
   String get editHabit => 'Muokkaa Tapa';
 
   @override
-  String get editTask => 'Muokkaa Tehtävää';
+  String get editTask => 'Muokkaa Tehtävä';
 
   @override
-  String get toNext => 'Seuraavaan';
+  String get toNext => 'Seuraava';
 
   @override
   String get completeDayHint => 'Suorita Myöhästynyt Päivä';
@@ -51,25 +51,25 @@ class AppLocalizationsFi extends AppLocalizations {
   String get habits => 'Tavat';
 
   @override
-  String get habitsDone => 'Tavat Tehty';
+  String get habitsDone => 'Tavat Suoritettu';
 
   @override
   String get tasks => 'Tehtävät';
 
   @override
-  String get tasksDue => 'Erääntyneet Tehtävät';
+  String get tasksDue => 'Erääntyvät Tehtävät';
 
   @override
-  String get tasksDone => 'Tehdyt Tehtävät';
+  String get tasksDone => 'Tehtävät Suoritettu';
 
   @override
   String get level => 'Taso';
 
   @override
-  String get todaysProgress => 'Tämänpäiväinen Edistyminen';
+  String get todaysProgress => 'Tämän Päivän Edistyminen';
 
   @override
-  String get experienceShort => 'KOK';
+  String get experienceShort => 'Kokemus';
 
   @override
   String get congratulations => 'Onnittelut!';
@@ -84,19 +84,17 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String dontForgetToUseAchievenents(Object goal) {
-    return 'Älä unohda käyttää saavutuksiasi kohtaamaan... $goal!';
+    return 'Älä unohda käyttää saavutuksiasi... $goal!';
   }
 
   @override
   String get goal => 'Tavoite';
 
   @override
-  String get defaultGoal => 'Paranna elämääsi!';
+  String get defaultGoal => 'Nosta elämäsi tasoa!';
 
   @override
-  String playerProgressToLevel(Object level) {
-    return 'Edistyminen Tasoon';
-  }
+  String get playerProgressToLevel => 'Edistyminen Tasoon';
 
   @override
   String get overdue => 'Myöhässä';
@@ -105,7 +103,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get goalMotivation => 'Tavoitemotivaatio';
 
   @override
-  String get goalMotivationHint => 'Mitä varten keräät kokemusta?';
+  String get goalMotivationHint => 'Miksi keräät kokemusta?';
 
   @override
   String get language => 'Kieli';
@@ -171,11 +169,11 @@ class AppLocalizationsFi extends AppLocalizations {
   String get hebrew => 'Heprea';
 
   @override
-  String get curveExponent => 'Käyräeksponentti';
+  String get curveExponent => 'Käyrän Eksponentti';
 
   @override
   String curveExponentDescription(Object exponent) {
-    return 'Käyräeksponentti: $exponent. Arvot <1 helpottavat alku tasoja, >1 helpottavat myöhempiä tasoja';
+    return 'Käyrän eksponentti: $exponent. Arvot <1 helpottavat varhaisia tasoja, >1 helpottavat myöhempiä tasoja';
   }
 
   @override
@@ -187,11 +185,11 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get levelProgressionPreview => 'Tasonousun Esikatselu:';
+  String get levelProgressionPreview => 'Tason Edistymisen Esikatselu:';
 
   @override
   String levelFormula(Object exponent, Object multiplier) {
-    return 'Kaava: KOK = $multiplier × (Taso-1)^$exponent';
+    return 'Kaava: KOKEMUS = $multiplier × (Taso-1)^$exponent';
   }
 
   @override
@@ -204,7 +202,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get habitFormTitle => 'Tavan Otsikko';
 
   @override
-  String get habitFormTitleError => 'Anna otsikko';
+  String get habitFormTitleError => 'Kirjoita otsikko';
 
   @override
   String get habitFormDescription => 'Kuvaus';
@@ -213,16 +211,16 @@ class AppLocalizationsFi extends AppLocalizations {
   String get habitFormExperience => 'Kokemuspisteet';
 
   @override
-  String get habitFormExperienceError => 'Anna kokemus';
+  String get habitFormExperienceError => 'Kirjoita kokemus';
 
   @override
-  String get habitFormNumberError => 'Anna kelvollinen numero';
+  String get habitFormNumberError => 'Kirjoita kelvollinen numero';
 
   @override
   String get habitFormMinCompletion => 'Minimi Suoritus';
 
   @override
-  String get habitFormMinCompletionError => 'Anna minimimäärä';
+  String get habitFormMinCompletionError => 'Kirjoita minimimäärä';
 
   @override
   String get habitFormMinCountError => 'Vähintään 1';
@@ -244,7 +242,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String habitItemExperience(Object experience) {
-    return '$experience KOK';
+    return '$experience KP';
   }
 
   @override
@@ -285,7 +283,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String habitItemDeleteConfirmationWarning(Object xpAmount) {
-    return '⚠️ Tämä poistaa $xpAmount KOK pelaajaltasi!';
+    return '⚠️ Tämä poistaa $xpAmount KP pelaajaltasi!';
   }
 
   @override
@@ -298,16 +296,16 @@ class AppLocalizationsFi extends AppLocalizations {
   String get habitsTabEmptyTitle => 'Ei vielä tapoja!';
 
   @override
-  String get habitsTabEmptySubtitle => 'Lisää ensimmäinen tapasi painamalla + -painiketta';
+  String get habitsTabEmptySubtitle => 'Napauta + lisätäksesi ensimmäisen tapasi';
 
   @override
-  String get habitsTabOnOtherDaysHeader => 'On other days';
+  String get habitsTabOnOtherDaysHeader => 'Muina päivinä';
 
   @override
   String get taskFormTitle => 'Tehtävän Otsikko';
 
   @override
-  String get taskFormTitleError => 'Anna otsikko';
+  String get taskFormTitleError => 'Kirjoita otsikko';
 
   @override
   String get taskFormDescription => 'Kuvaus';
@@ -316,14 +314,14 @@ class AppLocalizationsFi extends AppLocalizations {
   String get taskFormExperience => 'Kokemuspisteet';
 
   @override
-  String get taskFormExperienceError => 'Anna kokemus';
+  String get taskFormExperienceError => 'Kirjoita kokemus';
 
   @override
-  String get taskFormNumberError => 'Anna kelvollinen numero';
+  String get taskFormNumberError => 'Kirjoita kelvollinen numero';
 
   @override
   String taskFormDueDateLabel(Object date) {
-    return 'Eräpäivä: $date';
+    return 'Määräpäivä: $date';
   }
 
   @override
@@ -368,14 +366,14 @@ class AppLocalizationsFi extends AppLocalizations {
   String get tasksTabEmptyTitle => 'Ei vielä tehtäviä!';
 
   @override
-  String get tasksTabEmptySubtitle => 'Lisää ensimmäinen tehtäväsi painamalla + -painiketta';
+  String get tasksTabEmptySubtitle => 'Napauta + lisätäksesi ensimmäisen tehtäväsi';
 
   @override
   String get tasksTabCompletedHeader => 'Suoritetut Tehtävät';
 
   @override
   String tasksTabExperience(Object experience) {
-    return '$experience KOK';
+    return '$experience KP';
   }
 
   @override
@@ -394,7 +392,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String tasksTabDeleteConfirmationWarning(Object xpAmount) {
-    return '⚠️ Tämä poistaa $xpAmount KOK pelaajaltasi!';
+    return '⚠️ Tämä poistaa $xpAmount KP pelaajaltasi!';
   }
 
   @override
@@ -448,13 +446,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String scheduleCustomInterval(num days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days päivää',
-      one: '1 päivä',
-    );
-    return '$_temp0';
+    return '$days päivää';
   }
 
   @override
@@ -482,40 +474,40 @@ class AppLocalizationsFi extends AppLocalizations {
   String get weekdaySunday => 'Su';
 
   @override
-  String get sortByTitle => 'By name';
+  String get sortByTitle => 'Nimi';
 
   @override
-  String get sortByExperience => 'By experience';
+  String get sortByExperience => 'Kokemus';
 
   @override
-  String get sortByCompletionStatus => 'By completion status';
+  String get sortByScheduleType => 'Aikataulu';
 
   @override
-  String get sortByScheduleType => 'By schedule type';
+  String get sortByCompletionStatus => 'Suoritus';
 
   @override
-  String get sortByKarma => 'By streak';
+  String get sortByKarma => 'Putki';
 
   @override
-  String get sortByCompletionCount => 'By completion number';
+  String get sortByCompletionCount => 'Määrä';
 
   @override
-  String get sortByMinCompletionCount => 'By min for completion';
+  String get sortByMinCompletionCount => 'Minimi';
 
   @override
-  String get sortByPriority => 'By priority';
+  String get sortByPriority => 'Tärkeys';
 
   @override
-  String get sortByCategory => 'By category';
+  String get sortByCategory => 'Kategoria';
 
   @override
-  String get sortByDueDate => 'By due date';
+  String get sortByDueDate => 'Määräpäivä';
 
   @override
-  String get sortAscending => 'Ascending sort';
+  String get sortAscending => 'Nouseva järjestys';
 
   @override
-  String get sortDescending => 'Descending sort';
+  String get sortDescending => 'Laskeva järjestys';
 
   @override
   String get resetProgress => 'Nollaa Edistyminen';
@@ -524,8 +516,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get resetConfirmationTitle => 'Nollaa';
 
   @override
-  String get resetConfirmationMessage => 'Haluatko varmasti nollata edistymisesi? Tämä nollaa asetukset, tavoitteen, tason ja kokemuksen sekä asettaa luontipäivän nyt. Tapasi ja tehtäväsi eivät kuitenkaan muutu. Toimintoa ei voi peruuttaa.';
+  String get resetConfirmationMessage => 'Haluatko varmasti nollata edistymisesi? Tämä nollaa asetukset, tavoitteen, tason ja kokemuksen ja asettaa luontipäivämäärän nyt. Tapasi ja tehtäväsi eivät kuitenkaan muutu. Tätä toimintoa ei voi peruuttaa.';
 
   @override
-  String get resetSuccess => 'Edistymistiedot on nollattu onnistuneesti!';
+  String get resetSuccess => 'Edistymistiedot nollattu onnistuneesti!';
 }

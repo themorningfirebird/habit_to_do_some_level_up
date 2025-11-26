@@ -9,7 +9,7 @@ class AppLocalizationsHe extends AppLocalizations {
   AppLocalizationsHe([String locale = 'he']) : super(locale);
 
   @override
-  String get appTitle => 'הרגל לעשות - התקדמות ברמות!';
+  String get appTitle => 'הרגל לשדרוג עצמי!';
 
   @override
   String get home => 'בית';
@@ -30,13 +30,13 @@ class AppLocalizationsHe extends AppLocalizations {
   String get editTask => 'ערוך משימה';
 
   @override
-  String get toNext => 'לבא בתור';
+  String get toNext => 'הבא';
 
   @override
-  String get completeDayHint => 'השלם יום שהוחמצה';
+  String get completeDayHint => 'השלם יום שהוחמץ';
 
   @override
-  String get markCompletedHabitsHint => 'סמן הרגלים שהושלמו עבור יום זה:';
+  String get markCompletedHabitsHint => 'סמן הרגלים שהושלמו ליום זה:';
 
   @override
   String get skipDayButton => 'דלג על יום זה';
@@ -57,7 +57,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tasks => 'משימות';
 
   @override
-  String get tasksDue => 'משימות שצריך להשלים';
+  String get tasksDue => 'משימות שצריך לבצע';
 
   @override
   String get tasksDone => 'משימות שהושלמו';
@@ -76,7 +76,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String levelReached(Object level) {
-    return 'הגעת לרמה $level!';
+    return 'רמה $level הושגה!';
   }
 
   @override
@@ -84,28 +84,26 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String dontForgetToUseAchievenents(Object goal) {
-    return 'אל תשכח להשתמש בהישגים שלך כדי... $goal!';
+    return 'אל תשכח להשתמש בהישגיך כדי... $goal!';
   }
 
   @override
   String get goal => 'מטרה';
 
   @override
-  String get defaultGoal => 'להתקדם בחיים!';
+  String get defaultGoal => 'שדרג את חייך!';
 
   @override
-  String playerProgressToLevel(Object level) {
-    return 'התקדמות לרמה';
-  }
+  String get playerProgressToLevel => 'התקדמות לרמה';
 
   @override
   String get overdue => 'באיחור';
 
   @override
-  String get goalMotivation => 'מוטיבציה למטרה';
+  String get goalMotivation => 'מוטיבציית מטרה';
 
   @override
-  String get goalMotivationHint => 'בשביל מה אתה צובר ניסיון?';
+  String get goalMotivationHint => 'למה אתה צובר ניסיון?';
 
   @override
   String get language => 'שפה';
@@ -175,7 +173,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String curveExponentDescription(Object exponent) {
-    return 'מעריך עקומה: $exponent. ערכים קטנים מ-1 מקלים על הרמות הראשונות, ערכים גדולים מ-1 מקלים על הרמות המאוחרות יותר';
+    return 'מעריך עקומה: $exponent. ערכים <1 מקלים על רמות מוקדמות, >1 מקלים על רמות מאוחרות';
   }
 
   @override
@@ -183,7 +181,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String experienceMultiplierDescription(Object multiplier) {
-    return 'מכפיל ניסיון: $multiplier. ערכים גבוהים יותר מאטים את העלייה ברמות';
+    return 'מכפיל ניסיון: $multiplier. ערכים גבוהים יותר מאטים עלייה ברמה';
   }
 
   @override
@@ -219,7 +217,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get habitFormNumberError => 'נא להזין מספר תקין';
 
   @override
-  String get habitFormMinCompletion => 'מינימושלמים';
+  String get habitFormMinCompletion => 'מינימושלמות';
 
   @override
   String get habitFormMinCompletionError => 'נא להזין כמות מינימלית';
@@ -240,7 +238,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get habitFormMonthlyError => 'נא לבחור לפחות יום אחד ללוח זמנים חודשי';
 
   @override
-  String get habitFormCustomError => 'נא לבחור מרווח ללוח זמנים מותאם';
+  String get habitFormCustomError => 'נא לבחור מרווח ללוח זמנים מותאם אישית';
 
   @override
   String habitItemExperience(Object experience) {
@@ -254,7 +252,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String habitItemDoneSequence(Object karma) {
-    return 'רצף של $karma';
+    return 'רצף $karma';
   }
 
   @override
@@ -276,16 +274,16 @@ class AppLocalizationsHe extends AppLocalizations {
   String get habitItemScheduleCustom => 'מותאם';
 
   @override
-  String get habitItemDeleteConfirmationTitle => 'מחיקת הרגל';
+  String get habitItemDeleteConfirmationTitle => 'מחק הרגל';
 
   @override
   String habitItemDeleteConfirmationMessage(Object habitTitle) {
-    return 'האם אתה בטוח שברצונך למחוק את \"$habitTitle\"?';
+    return 'האם אתה בטוח שברצונך למחוק \"$habitTitle\"?';
   }
 
   @override
   String habitItemDeleteConfirmationWarning(Object xpAmount) {
-    return '⚠️ פעולה זו תסיר $xpAmount נ\"נ מהשחקן שלך!';
+    return '⚠️ זה יסיר $xpAmount נ\"נ מהשחקן שלך!';
   }
 
   @override
@@ -298,10 +296,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get habitsTabEmptyTitle => 'אין עדיין הרגלים!';
 
   @override
-  String get habitsTabEmptySubtitle => 'הקש על כפתור + כדי להוסיף את ההרגל הראשון שלך';
+  String get habitsTabEmptySubtitle => 'הקש על + כדי להוסיף את ההרגל הראשון שלך';
 
   @override
-  String get habitsTabOnOtherDaysHeader => 'On other days';
+  String get habitsTabOnOtherDaysHeader => 'בימים אחרים';
 
   @override
   String get taskFormTitle => 'כותרת משימה';
@@ -368,7 +366,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tasksTabEmptyTitle => 'אין עדיין משימות!';
 
   @override
-  String get tasksTabEmptySubtitle => 'הקש על כפתור + כדי להוסיף את המשימה הראשונה שלך';
+  String get tasksTabEmptySubtitle => 'הקש על + כדי להוסיף את המשימה הראשונה שלך';
 
   @override
   String get tasksTabCompletedHeader => 'משימות שהושלמו';
@@ -385,16 +383,16 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tasksTabDeleteTooltip => 'מחק משימה';
 
   @override
-  String get tasksTabDeleteConfirmationTitle => 'מחיקת משימה';
+  String get tasksTabDeleteConfirmationTitle => 'מחק משימה';
 
   @override
   String tasksTabDeleteConfirmationMessage(Object taskTitle) {
-    return 'האם אתה בטוח שברצונך למחוק את \"$taskTitle\"?';
+    return 'האם אתה בטוח שברצונך למחוק \"$taskTitle\"?';
   }
 
   @override
   String tasksTabDeleteConfirmationWarning(Object xpAmount) {
-    return '⚠️ פעולה זו תסיר $xpAmount נ\"נ מהשחקן שלך!';
+    return '⚠️ זה יסיר $xpAmount נ\"נ מהשחקן שלך!';
   }
 
   @override
@@ -414,24 +412,12 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String tasksTabDueDaysAgo(num days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days ימים',
-      one: 'יום אחד',
-    );
-    return 'לפני $_temp0';
+    return 'לפני $days ימים';
   }
 
   @override
   String tasksTabDueInDays(num days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days ימים',
-      one: 'יום אחד',
-    );
-    return 'בעוד $_temp0';
+    return 'בעוד $days ימים';
   }
 
   @override
@@ -453,81 +439,75 @@ class AppLocalizationsHe extends AppLocalizations {
   String get scheduleWeeklyTitle => 'בחר ימים:';
 
   @override
-  String get scheduleMonthlyTitle => 'בחר ימים בחודש:';
+  String get scheduleMonthlyTitle => 'בחר ימי חודש:';
 
   @override
   String get scheduleCustomTitle => 'חזור כל X ימים:';
 
   @override
   String scheduleCustomInterval(num days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days ימים',
-      one: 'יום אחד',
-    );
-    return '$_temp0';
+    return '$days ימים';
   }
 
   @override
   String get scheduleCustomError => 'נא לבחור מרווח';
 
   @override
-  String get weekdayMonday => 'יום ב\'';
+  String get weekdayMonday => 'ב׳';
 
   @override
-  String get weekdayTuesday => 'יום ג\'';
+  String get weekdayTuesday => 'ג׳';
 
   @override
-  String get weekdayWednesday => 'יום ד\'';
+  String get weekdayWednesday => 'ד׳';
 
   @override
-  String get weekdayThursday => 'יום ה\'';
+  String get weekdayThursday => 'ה׳';
 
   @override
-  String get weekdayFriday => 'יום ו\'';
+  String get weekdayFriday => 'ו׳';
 
   @override
-  String get weekdaySaturday => 'שבת';
+  String get weekdaySaturday => 'ש׳';
 
   @override
-  String get weekdaySunday => 'יום א\'';
+  String get weekdaySunday => 'א׳';
 
   @override
-  String get sortByTitle => 'By name';
+  String get sortByTitle => 'שם';
 
   @override
-  String get sortByExperience => 'By experience';
+  String get sortByExperience => 'ניסיון';
 
   @override
-  String get sortByCompletionStatus => 'By completion status';
+  String get sortByScheduleType => 'לוח זמנים';
 
   @override
-  String get sortByScheduleType => 'By schedule type';
+  String get sortByCompletionStatus => 'השלמה';
 
   @override
-  String get sortByKarma => 'By streak';
+  String get sortByKarma => 'רצף';
 
   @override
-  String get sortByCompletionCount => 'By completion number';
+  String get sortByCompletionCount => 'כמות';
 
   @override
-  String get sortByMinCompletionCount => 'By min for completion';
+  String get sortByMinCompletionCount => 'מינימום';
 
   @override
-  String get sortByPriority => 'By priority';
+  String get sortByPriority => 'עדיפות';
 
   @override
-  String get sortByCategory => 'By category';
+  String get sortByCategory => 'קטגוריה';
 
   @override
-  String get sortByDueDate => 'By due date';
+  String get sortByDueDate => 'תאריך יעד';
 
   @override
-  String get sortAscending => 'Ascending sort';
+  String get sortAscending => 'מיון בסדר עולה';
 
   @override
-  String get sortDescending => 'Descending sort';
+  String get sortDescending => 'מיון בסדר יורד';
 
   @override
   String get resetProgress => 'אפס התקדמות';
@@ -536,7 +516,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get resetConfirmationTitle => 'איפוס';
 
   @override
-  String get resetConfirmationMessage => 'האם אתה בטוח שברצונך לאפס את ההתקדמות שלך? פעולה זו תאפס את ההגדרות, המטרה, הרמה והניסיון, ותקבע את תאריך היצירה להווה. ההרגלים והמשימות שלך לא יושפעו. לא ניתן לבטל פעולה זו.';
+  String get resetConfirmationMessage => 'האם אתה בטוח שברצונך לאפס את ההתקדמות שלך? זה יאפס הגדרות, מטרה, רמה וניסיון ויקבע את תאריך היצירה לעכשיו. ההרגלים והמשימות שלך לא ייפגעו. לא ניתן לבטל פעולה זו.';
 
   @override
   String get resetSuccess => 'נתוני ההתקדמות אופסו בהצלחה!';

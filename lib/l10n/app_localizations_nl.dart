@@ -9,242 +9,240 @@ class AppLocalizationsNl extends AppLocalizations {
   AppLocalizationsNl([String locale = 'nl']) : super(locale);
 
   @override
-  String get appTitle => 'Vane At Gøre Noget Niveau Op!';
+  String get appTitle => 'Gewoonte om te Levelen!';
 
   @override
-  String get home => 'Hjem';
+  String get home => 'Home';
 
   @override
-  String get settings => 'Indstillinger';
+  String get settings => 'Instellingen';
 
   @override
-  String get addHabit => 'Tilføj Vane';
+  String get addHabit => 'Gewoonte Toevoegen';
 
   @override
-  String get addTask => 'Tilføj Opgave';
+  String get addTask => 'Taak Toevoegen';
 
   @override
-  String get editHabit => 'Rediger Vane';
+  String get editHabit => 'Gewoonte Bewerken';
 
   @override
-  String get editTask => 'Rediger Opgave';
+  String get editTask => 'Taak Bewerken';
 
   @override
-  String get toNext => 'Til Næste';
+  String get toNext => 'Volgende';
 
   @override
-  String get completeDayHint => 'Fuldfør Glemt Dag';
+  String get completeDayHint => 'Gemiste Dag Voltooien';
 
   @override
-  String get markCompletedHabitsHint => 'Marker fuldførte vaner for denne dag:';
+  String get markCompletedHabitsHint => 'Markeer voltooide gewoontes voor deze dag:';
 
   @override
-  String get skipDayButton => 'Spring Dag Over';
+  String get skipDayButton => 'Deze Dag Overslaan';
 
   @override
-  String get completeDayButton => 'Fuldfør Dag';
+  String get completeDayButton => 'Dag Voltooien';
 
   @override
-  String get scheduleType => 'Planlægningstype';
+  String get scheduleType => 'Schema Type';
 
   @override
-  String get habits => 'Vanner';
+  String get habits => 'Gewoontes';
 
   @override
-  String get habitsDone => 'Vanner Gjort';
+  String get habitsDone => 'Gewoontes Voltooid';
 
   @override
-  String get tasks => 'Opgaver';
+  String get tasks => 'Taken';
 
   @override
-  String get tasksDue => 'Opgaver Forfalder';
+  String get tasksDue => 'Te Doen Taken';
 
   @override
-  String get tasksDone => 'Opgaver Gjort';
+  String get tasksDone => 'Taken Voltooid';
 
   @override
   String get level => 'Niveau';
 
   @override
-  String get todaysProgress => 'Dagens Fremskridt';
+  String get todaysProgress => 'Voortgang Vandaag';
 
   @override
-  String get experienceShort => 'ERF';
+  String get experienceShort => 'EXP';
 
   @override
-  String get congratulations => 'Tillykke!';
+  String get congratulations => 'Gefeliciteerd!';
 
   @override
   String levelReached(Object level) {
-    return 'Niveau $level nået!';
+    return 'Niveau $level bereikt!';
   }
 
   @override
-  String get continueButton => 'Fortsæt';
+  String get continueButton => 'Doorgaan';
 
   @override
   String dontForgetToUseAchievenents(Object goal) {
-    return 'Glem ikke at bruge dine præstationer til at... $goal!';
+    return 'Vergeet niet je prestaties te gebruiken om... $goal!';
   }
 
   @override
-  String get goal => 'Mål';
+  String get goal => 'Doel';
 
   @override
-  String get defaultGoal => 'Niveauop din tilværelse!';
+  String get defaultGoal => 'Level je leven op!';
 
   @override
-  String playerProgressToLevel(Object level) {
-    return 'Fremskridt til Niveau';
-  }
+  String get playerProgressToLevel => 'Voortgang naar Niveau';
 
   @override
-  String get overdue => 'Overskredet';
+  String get overdue => 'Achterstallig';
 
   @override
-  String get goalMotivation => 'Mål Motivation';
+  String get goalMotivation => 'Doel Motivatie';
 
   @override
-  String get goalMotivationHint => 'Hvad samler du erfaring til?';
+  String get goalMotivationHint => 'Waarvoor verzamel je ervaring?';
 
   @override
-  String get language => 'Sprog';
+  String get language => 'Taal';
 
   @override
-  String get english => 'Engelsk';
+  String get english => 'Engels';
 
   @override
-  String get russian => 'Russisk';
+  String get russian => 'Russisch';
 
   @override
-  String get german => 'Tysk';
+  String get german => 'Duits';
 
   @override
-  String get french => 'Fransk';
+  String get french => 'Frans';
 
   @override
-  String get spanish => 'Spansk';
+  String get spanish => 'Spaans';
 
   @override
-  String get portuguese => 'Portugisisk';
+  String get portuguese => 'Portugees';
 
   @override
-  String get polish => 'Polsk';
+  String get polish => 'Pools';
 
   @override
-  String get italian => 'Italiensk';
+  String get italian => 'Italiaans';
 
   @override
-  String get dutch => 'Hollandsk';
+  String get dutch => 'Nederlands';
 
   @override
-  String get swedish => 'Svensk';
+  String get swedish => 'Zweeds';
 
   @override
-  String get norwegian => 'Norsk';
+  String get norwegian => 'Noors';
 
   @override
-  String get finnish => 'Finsk';
+  String get finnish => 'Fins';
 
   @override
-  String get armenian => 'Armensk';
+  String get armenian => 'Armeens';
 
   @override
-  String get turkish => 'Tyrkisk';
+  String get turkish => 'Turks';
 
   @override
-  String get chinese => 'Kinesisk';
+  String get chinese => 'Chinees';
 
   @override
-  String get japanese => 'Japansk';
+  String get japanese => 'Japans';
 
   @override
-  String get korean => 'Koreansk';
+  String get korean => 'Koreaans';
 
   @override
   String get hindi => 'Hindi';
 
   @override
-  String get arabic => 'Arabisk';
+  String get arabic => 'Arabisch';
 
   @override
-  String get hebrew => 'Hebræisk';
+  String get hebrew => 'Hebreeuws';
 
   @override
-  String get curveExponent => 'Kurve Eksponent';
+  String get curveExponent => 'Curve Exponent';
 
   @override
   String curveExponentDescription(Object exponent) {
-    return 'Kurve eksponent: $exponent. Værdier <1 gør tidlige niveauer nemmere, >1 gør senere niveauer nemmere';
+    return 'Curve exponent: $exponent. Waarden <1 maken vroege niveaus makkelijker, >1 maken latere niveaus makkelijker';
   }
 
   @override
-  String get experienceMultiplier => 'Erfarings Multiplikator';
+  String get experienceMultiplier => 'Ervaringsmultiplicator';
 
   @override
   String experienceMultiplierDescription(Object multiplier) {
-    return 'Erfarings multiplikator: $multiplier. Højere værdier gør niveau stigning langsommere';
+    return 'Ervaringsmultiplicator: $multiplier. Hogere waarden maken levelen langzamer';
   }
 
   @override
-  String get levelProgressionPreview => 'Niveau Fremskridts Forhåndsvisning:';
+  String get levelProgressionPreview => 'Niveau Voortgang Voorbeeld:';
 
   @override
   String levelFormula(Object exponent, Object multiplier) {
-    return 'Formel: ERF = $multiplier × (Niveau-1)^$exponent';
+    return 'Formule: EXP = $multiplier × (Niveau-1)^$exponent';
   }
 
   @override
-  String get cancel => 'Annuller';
+  String get cancel => 'Annuleren';
 
   @override
-  String get save => 'Gem';
+  String get save => 'Opslaan';
 
   @override
-  String get habitFormTitle => 'Vane Titel';
+  String get habitFormTitle => 'Gewoonte Titel';
 
   @override
-  String get habitFormTitleError => 'Indtast en titel';
+  String get habitFormTitleError => 'Voer een titel in';
 
   @override
-  String get habitFormDescription => 'Beskrivelse';
+  String get habitFormDescription => 'Beschrijving';
 
   @override
-  String get habitFormExperience => 'Erfarings Point';
+  String get habitFormExperience => 'Ervaringspunten';
 
   @override
-  String get habitFormExperienceError => 'Indtast erfaring';
+  String get habitFormExperienceError => 'Voer ervaring in';
 
   @override
-  String get habitFormNumberError => 'Indtast et gyldigt tal';
+  String get habitFormNumberError => 'Voer een geldig nummer in';
 
   @override
-  String get habitFormMinCompletion => 'Min Fuldførelse';
+  String get habitFormMinCompletion => 'Minimale Voltooiing';
 
   @override
-  String get habitFormMinCompletionError => 'Indtast minimum antal';
+  String get habitFormMinCompletionError => 'Voer minimum aantal in';
 
   @override
-  String get habitFormMinCountError => 'Mindst 1';
+  String get habitFormMinCountError => 'Minstens 1';
 
   @override
-  String get habitFormUpdate => 'Opdater Vane';
+  String get habitFormUpdate => 'Gewoonte Bijwerken';
 
   @override
-  String get habitFormSave => 'Gem Vane';
+  String get habitFormSave => 'Gewoonte Opslaan';
 
   @override
-  String get habitFormWeeklyError => 'Vælg mindst én dag for ugeplan';
+  String get habitFormWeeklyError => 'Selecteer minstens één dag voor wekelijks schema';
 
   @override
-  String get habitFormMonthlyError => 'Vælg mindst én dag for månedsplan';
+  String get habitFormMonthlyError => 'Selecteer minstens één dag voor maandelijks schema';
 
   @override
-  String get habitFormCustomError => 'Vælg interval for brugerdefineret plan';
+  String get habitFormCustomError => 'Selecteer interval voor aangepast schema';
 
   @override
   String habitItemExperience(Object experience) {
-    return '$experience ERF';
+    return '$experience EXP';
   }
 
   @override
@@ -254,290 +252,272 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String habitItemDoneSequence(Object karma) {
-    return '$karma i træk';
+    return '$karma reeks';
   }
 
   @override
-  String get habitItemEditTooltip => 'Rediger vane';
+  String get habitItemEditTooltip => 'Gewoonte bewerken';
 
   @override
-  String get habitItemDeleteTooltip => 'Slet vane';
+  String get habitItemDeleteTooltip => 'Gewoonte verwijderen';
 
   @override
-  String get habitItemScheduleDaily => 'daglig';
+  String get habitItemScheduleDaily => 'dagelijks';
 
   @override
-  String get habitItemScheduleWeekly => 'ugentlig';
+  String get habitItemScheduleWeekly => 'wekelijks';
 
   @override
-  String get habitItemScheduleMonthly => 'månedlig';
+  String get habitItemScheduleMonthly => 'maandelijks';
 
   @override
-  String get habitItemScheduleCustom => 'brugerdefineret';
+  String get habitItemScheduleCustom => 'aangepast';
 
   @override
-  String get habitItemDeleteConfirmationTitle => 'Slet Vane';
+  String get habitItemDeleteConfirmationTitle => 'Gewoonte Verwijderen';
 
   @override
   String habitItemDeleteConfirmationMessage(Object habitTitle) {
-    return 'Er du sikker på, at du vil slette \"$habitTitle\"?';
+    return 'Weet je zeker dat je \"$habitTitle\" wilt verwijderen?';
   }
 
   @override
   String habitItemDeleteConfirmationWarning(Object xpAmount) {
-    return '⚠️ Dette fjerner $xpAmount ERF fra din spiller!';
+    return '⚠️ Dit verwijdert $xpAmount EXP van je speler!';
   }
 
   @override
-  String get habitItemDeleteConfirmationCancel => 'Annuller';
+  String get habitItemDeleteConfirmationCancel => 'Annuleren';
 
   @override
-  String get habitItemDeleteConfirmationDelete => 'Slet';
+  String get habitItemDeleteConfirmationDelete => 'Verwijderen';
 
   @override
-  String get habitsTabEmptyTitle => 'Ingen vaner endnu!';
+  String get habitsTabEmptyTitle => 'Nog geen gewoontes!';
 
   @override
-  String get habitsTabEmptySubtitle => 'Tryk på + knappen for at tilføje din første vane';
+  String get habitsTabEmptySubtitle => 'Tik op de + knop om je eerste gewoonte toe te voegen';
 
   @override
-  String get habitsTabOnOtherDaysHeader => 'On other days';
+  String get habitsTabOnOtherDaysHeader => 'Op andere dagen';
 
   @override
-  String get taskFormTitle => 'Opgave Titel';
+  String get taskFormTitle => 'Taak Titel';
 
   @override
-  String get taskFormTitleError => 'Indtast en titel';
+  String get taskFormTitleError => 'Voer een titel in';
 
   @override
-  String get taskFormDescription => 'Beskrivelse';
+  String get taskFormDescription => 'Beschrijving';
 
   @override
-  String get taskFormExperience => 'Erfarings Point';
+  String get taskFormExperience => 'Ervaringspunten';
 
   @override
-  String get taskFormExperienceError => 'Indtast erfaring';
+  String get taskFormExperienceError => 'Voer ervaring in';
 
   @override
-  String get taskFormNumberError => 'Indtast et gyldigt tal';
+  String get taskFormNumberError => 'Voer een geldig nummer in';
 
   @override
   String taskFormDueDateLabel(Object date) {
-    return 'Forfaldsdato: $date';
+    return 'Vervaldatum: $date';
   }
 
   @override
-  String get taskFormSelectDate => 'Vælg Dato';
+  String get taskFormSelectDate => 'Selecteer Datum';
 
   @override
   String taskFormPriorityLabel(Object priority) {
-    return 'Prioritet: $priority';
+    return 'Prioriteit: $priority';
   }
 
   @override
-  String get taskFormCategory => 'Kategori';
+  String get taskFormCategory => 'Categorie';
 
   @override
-  String get taskFormUpdate => 'Opdater Opgave';
+  String get taskFormUpdate => 'Taak Bijwerken';
 
   @override
-  String get taskFormSave => 'Gem Opgave';
+  String get taskFormSave => 'Taak Opslaan';
 
   @override
-  String get taskCategoryWork => 'Arbejde';
+  String get taskCategoryWork => 'Werk';
 
   @override
-  String get taskCategoryPersonal => 'Personlig';
+  String get taskCategoryPersonal => 'Persoonlijk';
 
   @override
-  String get taskCategoryHealth => 'Sundhed';
+  String get taskCategoryHealth => 'Gezondheid';
 
   @override
-  String get taskCategoryLearning => 'Læring';
+  String get taskCategoryLearning => 'Leren';
 
   @override
-  String get taskCategoryHome => 'Hjem';
+  String get taskCategoryHome => 'Huis';
 
   @override
-  String get taskCategorySocial => 'Social';
+  String get taskCategorySocial => 'Sociaal';
 
   @override
-  String get taskCategoryOther => 'Andet';
+  String get taskCategoryOther => 'Anders';
 
   @override
-  String get tasksTabEmptyTitle => 'Ingen opgaver endnu!';
+  String get tasksTabEmptyTitle => 'Nog geen taken!';
 
   @override
-  String get tasksTabEmptySubtitle => 'Tryk på + knappen for at tilføje din første opgave';
+  String get tasksTabEmptySubtitle => 'Tik op de + knop om je eerste taak toe te voegen';
 
   @override
-  String get tasksTabCompletedHeader => 'Fuldførte Opgaver';
+  String get tasksTabCompletedHeader => 'Voltooide Taken';
 
   @override
   String tasksTabExperience(Object experience) {
-    return '$experience ERF';
+    return '$experience EXP';
   }
 
   @override
-  String get tasksTabEditTooltip => 'Rediger opgave';
+  String get tasksTabEditTooltip => 'Taak bewerken';
 
   @override
-  String get tasksTabDeleteTooltip => 'Slet opgave';
+  String get tasksTabDeleteTooltip => 'Taak verwijderen';
 
   @override
-  String get tasksTabDeleteConfirmationTitle => 'Slet Opgave';
+  String get tasksTabDeleteConfirmationTitle => 'Taak Verwijderen';
 
   @override
   String tasksTabDeleteConfirmationMessage(Object taskTitle) {
-    return 'Er du sikker på, at du vil slette \"$taskTitle\"?';
+    return 'Weet je zeker dat je \"$taskTitle\" wilt verwijderen?';
   }
 
   @override
   String tasksTabDeleteConfirmationWarning(Object xpAmount) {
-    return '⚠️ Dette fjerner $xpAmount ERF fra din spiller!';
+    return '⚠️ Dit verwijdert $xpAmount EXP van je speler!';
   }
 
   @override
-  String get tasksTabDeleteConfirmationCancel => 'Annuller';
+  String get tasksTabDeleteConfirmationCancel => 'Annuleren';
 
   @override
-  String get tasksTabDeleteConfirmationDelete => 'Slet';
+  String get tasksTabDeleteConfirmationDelete => 'Verwijderen';
 
   @override
-  String get tasksTabDueToday => 'I dag';
+  String get tasksTabDueToday => 'Vandaag';
 
   @override
-  String get tasksTabDueTomorrow => 'I morgen';
+  String get tasksTabDueTomorrow => 'Morgen';
 
   @override
-  String get tasksTabDueYesterday => 'I går';
+  String get tasksTabDueYesterday => 'Gisteren';
 
   @override
   String tasksTabDueDaysAgo(num days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'for $days dage siden',
-      one: 'for $days dag siden',
-    );
-    return '$_temp0';
+    return '$days dagen geleden';
   }
 
   @override
   String tasksTabDueInDays(num days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days dage',
-      one: '$days dag',
-    );
-    return 'Om $_temp0';
+    return 'Over $days dagen';
   }
 
   @override
-  String get scheduleSelectorTitle => 'Planlægningstype';
+  String get scheduleSelectorTitle => 'Schema Type';
 
   @override
-  String get scheduleTypeDaily => 'Daglig';
+  String get scheduleTypeDaily => 'Dagelijks';
 
   @override
-  String get scheduleTypeWeekly => 'Ugentlig';
+  String get scheduleTypeWeekly => 'Wekelijks';
 
   @override
-  String get scheduleTypeMonthly => 'Månedlig';
+  String get scheduleTypeMonthly => 'Maandelijks';
 
   @override
-  String get scheduleTypeCustom => 'Brugerdefineret Interval';
+  String get scheduleTypeCustom => 'Aangepast Interval';
 
   @override
-  String get scheduleWeeklyTitle => 'Vælg dage:';
+  String get scheduleWeeklyTitle => 'Selecteer dagen:';
 
   @override
-  String get scheduleMonthlyTitle => 'Vælg dage i måneden:';
+  String get scheduleMonthlyTitle => 'Selecteer dagen van de maand:';
 
   @override
-  String get scheduleCustomTitle => 'Gentag hver X. dag:';
+  String get scheduleCustomTitle => 'Herhaal elke X dagen:';
 
   @override
   String scheduleCustomInterval(num days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days dage',
-      one: '1 dag',
-    );
-    return '$_temp0';
+    return '$days dagen';
   }
 
   @override
-  String get scheduleCustomError => 'Vælg interval';
+  String get scheduleCustomError => 'Selecteer interval';
 
   @override
-  String get weekdayMonday => 'Man';
+  String get weekdayMonday => 'Ma';
 
   @override
-  String get weekdayTuesday => 'Tir';
+  String get weekdayTuesday => 'Di';
 
   @override
-  String get weekdayWednesday => 'Ons';
+  String get weekdayWednesday => 'Wo';
 
   @override
-  String get weekdayThursday => 'Tor';
+  String get weekdayThursday => 'Do';
 
   @override
-  String get weekdayFriday => 'Fre';
+  String get weekdayFriday => 'Vr';
 
   @override
-  String get weekdaySaturday => 'Lør';
+  String get weekdaySaturday => 'Za';
 
   @override
-  String get weekdaySunday => 'Søn';
+  String get weekdaySunday => 'Zo';
 
   @override
-  String get sortByTitle => 'By name';
+  String get sortByTitle => 'Naam';
 
   @override
-  String get sortByExperience => 'By experience';
+  String get sortByExperience => 'Ervaring';
 
   @override
-  String get sortByCompletionStatus => 'By completion status';
+  String get sortByScheduleType => 'Schema';
 
   @override
-  String get sortByScheduleType => 'By schedule type';
+  String get sortByCompletionStatus => 'Voltooiing';
 
   @override
-  String get sortByKarma => 'By streak';
+  String get sortByKarma => 'Reeks';
 
   @override
-  String get sortByCompletionCount => 'By completion number';
+  String get sortByCompletionCount => 'Aantal';
 
   @override
-  String get sortByMinCompletionCount => 'By min for completion';
+  String get sortByMinCompletionCount => 'Minimum';
 
   @override
-  String get sortByPriority => 'By priority';
+  String get sortByPriority => 'Prioriteit';
 
   @override
-  String get sortByCategory => 'By category';
+  String get sortByCategory => 'Categorie';
 
   @override
-  String get sortByDueDate => 'By due date';
+  String get sortByDueDate => 'Vervaldatum';
 
   @override
-  String get sortAscending => 'Ascending sort';
+  String get sortAscending => 'Oplopend sorteren';
 
   @override
-  String get sortDescending => 'Descending sort';
+  String get sortDescending => 'Aflopend sorteren';
 
   @override
-  String get resetProgress => 'Nulstil Fremskridt';
+  String get resetProgress => 'Voortgang Resetten';
 
   @override
-  String get resetConfirmationTitle => 'Nulstil';
+  String get resetConfirmationTitle => 'Reset';
 
   @override
-  String get resetConfirmationMessage => 'Er du sikker på, at du vil nulstille dine fremskridt? Dette nulstiller indstillinger, mål, niveau og erfaring og sætter oprettelsesdatoen til nu. Dine vaner og opgaver påvirkes dog ikke. Handlingen kan ikke fortrydes.';
+  String get resetConfirmationMessage => 'Weet je zeker dat je je voortgang wilt resetten? Dit reset instellingen, doel, niveau en ervaring en stelt de aanmaakdatum in op nu. Je gewoontes en taken worden echter niet beïnvloed. Deze actie kan niet ongedaan worden gemaakt.';
 
   @override
-  String get resetSuccess => 'Fremskridtsdata er blevet nulstillet!';
+  String get resetSuccess => 'Voortgangsgegevens succesvol gereset!';
 }

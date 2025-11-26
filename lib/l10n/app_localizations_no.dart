@@ -9,7 +9,7 @@ class AppLocalizationsNo extends AppLocalizations {
   AppLocalizationsNo([String locale = 'no']) : super(locale);
 
   @override
-  String get appTitle => 'Vane for å Gjøre Noe Nivå Opp!';
+  String get appTitle => 'Vane for å Level Opp!';
 
   @override
   String get home => 'Hjem';
@@ -18,55 +18,55 @@ class AppLocalizationsNo extends AppLocalizations {
   String get settings => 'Innstillinger';
 
   @override
-  String get addHabit => 'Legg til vane';
+  String get addHabit => 'Legg til Vane';
 
   @override
-  String get addTask => 'Legg til oppgave';
+  String get addTask => 'Legg til Oppgave';
 
   @override
-  String get editHabit => 'Rediger vane';
+  String get editHabit => 'Rediger Vane';
 
   @override
-  String get editTask => 'Rediger oppgave';
+  String get editTask => 'Rediger Oppgave';
 
   @override
-  String get toNext => 'Til neste';
+  String get toNext => 'Neste';
 
   @override
-  String get completeDayHint => 'Fullfør overskudd dag';
+  String get completeDayHint => 'Fullfør Overskudd Dag';
 
   @override
   String get markCompletedHabitsHint => 'Merk fullførte vaner for denne dagen:';
 
   @override
-  String get skipDayButton => 'Hopp over denne dagen';
+  String get skipDayButton => 'Hopp over denne Dagen';
 
   @override
-  String get completeDayButton => 'Fullfør dag';
+  String get completeDayButton => 'Fullfør Dag';
 
   @override
-  String get scheduleType => 'Planleggingstype';
+  String get scheduleType => 'Timeplan Type';
 
   @override
   String get habits => 'Vaner';
 
   @override
-  String get habitsDone => 'Vaner fullført';
+  String get habitsDone => 'Vaner Fullført';
 
   @override
   String get tasks => 'Oppgaver';
 
   @override
-  String get tasksDue => 'Oppgaver forfaller';
+  String get tasksDue => 'Oppgaver Forfaller';
 
   @override
-  String get tasksDone => 'Oppgaver fullført';
+  String get tasksDone => 'Oppgaver Fullført';
 
   @override
   String get level => 'Nivå';
 
   @override
-  String get todaysProgress => 'Dagens fremgang';
+  String get todaysProgress => 'Dagens Fremskritt';
 
   @override
   String get experienceShort => 'ERF';
@@ -84,25 +84,23 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String dontForgetToUseAchievenents(Object goal) {
-    return 'Ikke glem å bruke prestasjonene dine til å... $goal!';
+    return 'Ikke glem å bruke prestasjonene dine til... $goal!';
   }
 
   @override
   String get goal => 'Mål';
 
   @override
-  String get defaultGoal => 'Nivå opp livet ditt!';
+  String get defaultGoal => 'Level opp livet ditt!';
 
   @override
-  String playerProgressToLevel(Object level) {
-    return 'Fremgang til nivå';
-  }
+  String get playerProgressToLevel => 'Fremskritt til Nivå';
 
   @override
   String get overdue => 'På overtid';
 
   @override
-  String get goalMotivation => 'Mål motivasjon';
+  String get goalMotivation => 'Mål Motivasjon';
 
   @override
   String get goalMotivationHint => 'Hva samler du erfaring for?';
@@ -171,7 +169,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get hebrew => 'Hebraisk';
 
   @override
-  String get curveExponent => 'Kurve eksponent';
+  String get curveExponent => 'Kurve Eksponent';
 
   @override
   String curveExponentDescription(Object exponent) {
@@ -183,11 +181,11 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String experienceMultiplierDescription(Object multiplier) {
-    return 'Erfaringsmultiplikator: $multiplier. Høyere verdier gjør nivåoppgang tregere';
+    return 'Erfaringsmultiplikator: $multiplier. Høyere verdier gjør leveling tregere';
   }
 
   @override
-  String get levelProgressionPreview => 'Forhåndsvisning av nivå progresjon:';
+  String get levelProgressionPreview => 'Nivå Progresjon Forhåndsvisning:';
 
   @override
   String levelFormula(Object exponent, Object multiplier) {
@@ -201,7 +199,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get save => 'Lagre';
 
   @override
-  String get habitFormTitle => 'Vanetittel';
+  String get habitFormTitle => 'Vane Tittel';
 
   @override
   String get habitFormTitleError => 'Vennligst skriv inn en tittel';
@@ -216,31 +214,31 @@ class AppLocalizationsNo extends AppLocalizations {
   String get habitFormExperienceError => 'Vennligst skriv inn erfaring';
 
   @override
-  String get habitFormNumberError => 'Vennligst skriv inn et gyldig tall';
+  String get habitFormNumberError => 'Vennligst skriv inn et gyldig nummer';
 
   @override
-  String get habitFormMinCompletion => 'Min. fullføring';
+  String get habitFormMinCompletion => 'Min Fullføring';
 
   @override
-  String get habitFormMinCompletionError => 'Vennligst skriv inn minste antall';
+  String get habitFormMinCompletionError => 'Vennligst skriv inn minst antall';
 
   @override
   String get habitFormMinCountError => 'Minst 1';
 
   @override
-  String get habitFormUpdate => 'Oppdater vane';
+  String get habitFormUpdate => 'Oppdater Vane';
 
   @override
-  String get habitFormSave => 'Lagre vane';
+  String get habitFormSave => 'Lagre Vane';
 
   @override
-  String get habitFormWeeklyError => 'Vennligst velg minst én dag for ukentlig plan';
+  String get habitFormWeeklyError => 'Vennligst velg minst en dag for ukentlig timeplan';
 
   @override
-  String get habitFormMonthlyError => 'Vennligst velg minst én dag for månedlig plan';
+  String get habitFormMonthlyError => 'Vennligst velg minst en dag for månedlig timeplan';
 
   @override
-  String get habitFormCustomError => 'Vennligst velg intervall for tilpasset plan';
+  String get habitFormCustomError => 'Vennligst velg intervall for tilpasset timeplan';
 
   @override
   String habitItemExperience(Object experience) {
@@ -276,7 +274,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get habitItemScheduleCustom => 'tilpasset';
 
   @override
-  String get habitItemDeleteConfirmationTitle => 'Slett vane';
+  String get habitItemDeleteConfirmationTitle => 'Slett Vane';
 
   @override
   String habitItemDeleteConfirmationMessage(Object habitTitle) {
@@ -301,10 +299,10 @@ class AppLocalizationsNo extends AppLocalizations {
   String get habitsTabEmptySubtitle => 'Trykk på + knappen for å legge til din første vane';
 
   @override
-  String get habitsTabOnOtherDaysHeader => 'On other days';
+  String get habitsTabOnOtherDaysHeader => 'På andre dager';
 
   @override
-  String get taskFormTitle => 'Oppgavetittel';
+  String get taskFormTitle => 'Oppgave Tittel';
 
   @override
   String get taskFormTitleError => 'Vennligst skriv inn en tittel';
@@ -319,7 +317,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get taskFormExperienceError => 'Vennligst skriv inn erfaring';
 
   @override
-  String get taskFormNumberError => 'Vennligst skriv inn et gyldig tall';
+  String get taskFormNumberError => 'Vennligst skriv inn et gyldig nummer';
 
   @override
   String taskFormDueDateLabel(Object date) {
@@ -327,7 +325,7 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get taskFormSelectDate => 'Velg dato';
+  String get taskFormSelectDate => 'Velg Dato';
 
   @override
   String taskFormPriorityLabel(Object priority) {
@@ -338,10 +336,10 @@ class AppLocalizationsNo extends AppLocalizations {
   String get taskFormCategory => 'Kategori';
 
   @override
-  String get taskFormUpdate => 'Oppdater oppgave';
+  String get taskFormUpdate => 'Oppdater Oppgave';
 
   @override
-  String get taskFormSave => 'Lagre oppgave';
+  String get taskFormSave => 'Lagre Oppgave';
 
   @override
   String get taskCategoryWork => 'Arbeid';
@@ -371,7 +369,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get tasksTabEmptySubtitle => 'Trykk på + knappen for å legge til din første oppgave';
 
   @override
-  String get tasksTabCompletedHeader => 'Fullførte oppgaver';
+  String get tasksTabCompletedHeader => 'Fullførte Oppgaver';
 
   @override
   String tasksTabExperience(Object experience) {
@@ -385,7 +383,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get tasksTabDeleteTooltip => 'Slett oppgave';
 
   @override
-  String get tasksTabDeleteConfirmationTitle => 'Slett oppgave';
+  String get tasksTabDeleteConfirmationTitle => 'Slett Oppgave';
 
   @override
   String tasksTabDeleteConfirmationMessage(Object taskTitle) {
@@ -414,28 +412,16 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String tasksTabDueDaysAgo(num days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days dager siden',
-      one: '1 dag siden',
-    );
-    return '$_temp0';
+    return 'For $days dager siden';
   }
 
   @override
   String tasksTabDueInDays(num days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days dager',
-      one: '1 dag',
-    );
-    return 'Om $_temp0';
+    return 'Om $days dager';
   }
 
   @override
-  String get scheduleSelectorTitle => 'Planleggingstype';
+  String get scheduleSelectorTitle => 'Timeplan Type';
 
   @override
   String get scheduleTypeDaily => 'Daglig';
@@ -447,7 +433,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get scheduleTypeMonthly => 'Månedlig';
 
   @override
-  String get scheduleTypeCustom => 'Tilpasset intervall';
+  String get scheduleTypeCustom => 'Tilpasset Intervall';
 
   @override
   String get scheduleWeeklyTitle => 'Velg dager:';
@@ -460,13 +446,7 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String scheduleCustomInterval(num days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days dager',
-      one: '1 dag',
-    );
-    return '$_temp0';
+    return '$days dager';
   }
 
   @override
@@ -494,50 +474,50 @@ class AppLocalizationsNo extends AppLocalizations {
   String get weekdaySunday => 'Søn';
 
   @override
-  String get sortByTitle => 'By name';
+  String get sortByTitle => 'Navn';
 
   @override
-  String get sortByExperience => 'By experience';
+  String get sortByExperience => 'Erfaring';
 
   @override
-  String get sortByCompletionStatus => 'By completion status';
+  String get sortByScheduleType => 'Timeplan';
 
   @override
-  String get sortByScheduleType => 'By schedule type';
+  String get sortByCompletionStatus => 'Fullføring';
 
   @override
-  String get sortByKarma => 'By streak';
+  String get sortByKarma => 'Rekke';
 
   @override
-  String get sortByCompletionCount => 'By completion number';
+  String get sortByCompletionCount => 'Antall';
 
   @override
-  String get sortByMinCompletionCount => 'By min for completion';
+  String get sortByMinCompletionCount => 'Minimum';
 
   @override
-  String get sortByPriority => 'By priority';
+  String get sortByPriority => 'Prioritet';
 
   @override
-  String get sortByCategory => 'By category';
+  String get sortByCategory => 'Kategori';
 
   @override
-  String get sortByDueDate => 'By due date';
+  String get sortByDueDate => 'Forfallsdato';
 
   @override
-  String get sortAscending => 'Ascending sort';
+  String get sortAscending => 'Stigende sortering';
 
   @override
-  String get sortDescending => 'Descending sort';
+  String get sortDescending => 'Synkende sortering';
 
   @override
-  String get resetProgress => 'Tilbakestill fremgang';
+  String get resetProgress => 'Tilbakestill Fremskritt';
 
   @override
   String get resetConfirmationTitle => 'Tilbakestill';
 
   @override
-  String get resetConfirmationMessage => 'Er du sikker på at du vil tilbakestille fremgangen din? Dette vil tilbakestille innstillinger, mål, nivå og erfaring og sette opprettelsesdato til nå. Dine vaner og oppgaver blir imidlertid ikke påvirket. Denne handlingen kan ikke angres.';
+  String get resetConfirmationMessage => 'Er du sikker på at du vil tilbakestille fremskrittet ditt? Dette vil tilbakestille innstillinger, mål, nivå og erfaring og sette opprettelsesdato til nå. Vanene og oppgavene dine blir imidlertid ikke berørt. Denne handlingen kan ikke angres.';
 
   @override
-  String get resetSuccess => 'Fremgangsdata har blitt tilbakestilt!';
+  String get resetSuccess => 'Fremskrittsdata har blitt tilbakestilt!';
 }

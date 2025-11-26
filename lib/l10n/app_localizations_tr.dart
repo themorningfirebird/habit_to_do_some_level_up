@@ -9,7 +9,7 @@ class AppLocalizationsTr extends AppLocalizations {
   AppLocalizationsTr([String locale = 'tr']) : super(locale);
 
   @override
-  String get appTitle => 'Alışkanlık: Seviye Atla!';
+  String get appTitle => 'Seviye Atlama Alışkanlığı!';
 
   @override
   String get home => 'Ana Sayfa';
@@ -45,7 +45,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get completeDayButton => 'Günü Tamamla';
 
   @override
-  String get scheduleType => 'Takvim Türü';
+  String get scheduleType => 'Program Türü';
 
   @override
   String get habits => 'Alışkanlıklar';
@@ -57,7 +57,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get tasks => 'Görevler';
 
   @override
-  String get tasksDue => 'Son Tarihli Görevler';
+  String get tasksDue => 'Yapılacak Görevler';
 
   @override
   String get tasksDone => 'Tamamlanan Görevler';
@@ -76,7 +76,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String levelReached(Object level) {
-    return '$level. seviyeye ulaşıldı!';
+    return '$level. Seviyeye ulaşıldı!';
   }
 
   @override
@@ -84,19 +84,17 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String dontForgetToUseAchievenents(Object goal) {
-    return 'Başarılarınızı şu amaçla kullanmayı unutmayın: $goal!';
+    return 'Başarılarınızı kullanmayı unutmayın... $goal!';
   }
 
   @override
   String get goal => 'Hedef';
 
   @override
-  String get defaultGoal => 'Hayatında seviye atla!';
+  String get defaultGoal => 'Hayatını seviye atlat!';
 
   @override
-  String playerProgressToLevel(Object level) {
-    return '$level. Seviyeye İlerleme';
-  }
+  String get playerProgressToLevel => 'Seviyeye İlerleme';
 
   @override
   String get overdue => 'Gecikmiş';
@@ -105,7 +103,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get goalMotivation => 'Hedef Motivasyonu';
 
   @override
-  String get goalMotivationHint => 'Deneyim puanlarını ne için biriktiriyorsun?';
+  String get goalMotivationHint => 'Ne için deneyim biriktiriyorsunuz?';
 
   @override
   String get language => 'Dil';
@@ -175,15 +173,15 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String curveExponentDescription(Object exponent) {
-    return 'Eğri üssü: $exponent. 1\'den küçük değerler ilk seviyeleri kolaylaştırır, 1\'den büyük değerler sonraki seviyeleri kolaylaştırır';
+    return 'Eğri üssü: $exponent. <1 değerleri erken seviyeleri kolaylaştırır, >1 sonraki seviyeleri kolaylaştırır';
   }
 
   @override
-  String get experienceMultiplier => 'Deneyim Çarpanı';
+  String get experienceMultiplier => 'Tecrübe Çarpanı';
 
   @override
   String experienceMultiplierDescription(Object multiplier) {
-    return 'Deneyim çarpanı: $multiplier. Yüksek değerler seviye atlamayı yavaşlatır';
+    return 'Tecrübe çarpanı: $multiplier. Daha yüksek değerler seviye atlamayı yavaşlatır';
   }
 
   @override
@@ -210,19 +208,19 @@ class AppLocalizationsTr extends AppLocalizations {
   String get habitFormDescription => 'Açıklama';
 
   @override
-  String get habitFormExperience => 'Deneyim Puanları';
+  String get habitFormExperience => 'Tecrübe Puanları';
 
   @override
-  String get habitFormExperienceError => 'Lütfen deneyim puanı girin';
+  String get habitFormExperienceError => 'Lütfen tecrübe girin';
 
   @override
   String get habitFormNumberError => 'Lütfen geçerli bir sayı girin';
 
   @override
-  String get habitFormMinCompletion => 'Min. Tamamlama';
+  String get habitFormMinCompletion => 'Min Tamamlama';
 
   @override
-  String get habitFormMinCompletionError => 'Lütfen min. sayıyı girin';
+  String get habitFormMinCompletionError => 'Lütfen min sayı girin';
 
   @override
   String get habitFormMinCountError => 'En az 1';
@@ -234,13 +232,13 @@ class AppLocalizationsTr extends AppLocalizations {
   String get habitFormSave => 'Alışkanlığı Kaydet';
 
   @override
-  String get habitFormWeeklyError => 'Lütfen haftalık takvim için en az bir gün seçin';
+  String get habitFormWeeklyError => 'Lütfen haftalık program için en az bir gün seçin';
 
   @override
-  String get habitFormMonthlyError => 'Lütfen aylık takvim için en az bir gün seçin';
+  String get habitFormMonthlyError => 'Lütfen aylık program için en az bir gün seçin';
 
   @override
-  String get habitFormCustomError => 'Lütfen özel takvim için aralık seçin';
+  String get habitFormCustomError => 'Lütfen özel program için aralık seçin';
 
   @override
   String habitItemExperience(Object experience) {
@@ -249,7 +247,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String habitItemMinCompletion(Object minCompletionCount) {
-    return 'min. $minCompletionCount';
+    return 'min $minCompletionCount';
   }
 
   @override
@@ -285,7 +283,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String habitItemDeleteConfirmationWarning(Object xpAmount) {
-    return '⚠️ Bu işlem $xpAmount TP\'yi oyuncunuzdan silecek!';
+    return '⚠️ Bu, oyuncunuzdan $xpAmount TP kaldıracak!';
   }
 
   @override
@@ -298,10 +296,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get habitsTabEmptyTitle => 'Henüz alışkanlık yok!';
 
   @override
-  String get habitsTabEmptySubtitle => 'İlk alışkanlığınızı eklemek için + butonuna tıklayın';
+  String get habitsTabEmptySubtitle => 'İlk alışkanlığınızı eklemek için + düğmesine dokunun';
 
   @override
-  String get habitsTabOnOtherDaysHeader => 'On other days';
+  String get habitsTabOnOtherDaysHeader => 'Diğer günlerde';
 
   @override
   String get taskFormTitle => 'Görev Başlığı';
@@ -313,10 +311,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get taskFormDescription => 'Açıklama';
 
   @override
-  String get taskFormExperience => 'Deneyim Puanları';
+  String get taskFormExperience => 'Tecrübe Puanları';
 
   @override
-  String get taskFormExperienceError => 'Lütfen deneyim puanı girin';
+  String get taskFormExperienceError => 'Lütfen tecrübe girin';
 
   @override
   String get taskFormNumberError => 'Lütfen geçerli bir sayı girin';
@@ -368,7 +366,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get tasksTabEmptyTitle => 'Henüz görev yok!';
 
   @override
-  String get tasksTabEmptySubtitle => 'İlk görevinizi eklemek için + butonuna tıklayın';
+  String get tasksTabEmptySubtitle => 'İlk görevinizi eklemek için + düğmesine dokunun';
 
   @override
   String get tasksTabCompletedHeader => 'Tamamlanan Görevler';
@@ -394,7 +392,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String tasksTabDeleteConfirmationWarning(Object xpAmount) {
-    return '⚠️ Bu işlem $xpAmount TP\'yi oyuncunuzdan silecek!';
+    return '⚠️ Bu, oyuncunuzdan $xpAmount TP kaldıracak!';
   }
 
   @override
@@ -423,7 +421,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get scheduleSelectorTitle => 'Takvim Türü';
+  String get scheduleSelectorTitle => 'Program Türü';
 
   @override
   String get scheduleTypeDaily => 'Günlük';
@@ -448,13 +446,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String scheduleCustomInterval(num days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days gün',
-      one: '1 gün',
-    );
-    return '$_temp0';
+    return '$days gün';
   }
 
   @override
@@ -482,40 +474,40 @@ class AppLocalizationsTr extends AppLocalizations {
   String get weekdaySunday => 'Paz';
 
   @override
-  String get sortByTitle => 'By name';
+  String get sortByTitle => 'İsim';
 
   @override
-  String get sortByExperience => 'By experience';
+  String get sortByExperience => 'Tecrübe';
 
   @override
-  String get sortByCompletionStatus => 'By completion status';
+  String get sortByScheduleType => 'Program';
 
   @override
-  String get sortByScheduleType => 'By schedule type';
+  String get sortByCompletionStatus => 'Tamamlama';
 
   @override
-  String get sortByKarma => 'By streak';
+  String get sortByKarma => 'Seri';
 
   @override
-  String get sortByCompletionCount => 'By completion number';
+  String get sortByCompletionCount => 'Sayı';
 
   @override
-  String get sortByMinCompletionCount => 'By min for completion';
+  String get sortByMinCompletionCount => 'Minimum';
 
   @override
-  String get sortByPriority => 'By priority';
+  String get sortByPriority => 'Öncelik';
 
   @override
-  String get sortByCategory => 'By category';
+  String get sortByCategory => 'Kategori';
 
   @override
-  String get sortByDueDate => 'By due date';
+  String get sortByDueDate => 'Bitiş Tarihi';
 
   @override
-  String get sortAscending => 'Ascending sort';
+  String get sortAscending => 'Artan sıralama';
 
   @override
-  String get sortDescending => 'Descending sort';
+  String get sortDescending => 'Azalan sıralama';
 
   @override
   String get resetProgress => 'İlerlemeyi Sıfırla';
@@ -524,7 +516,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get resetConfirmationTitle => 'Sıfırla';
 
   @override
-  String get resetConfirmationMessage => 'İlerlemenizi sıfırlamak istediğinizden emin misiniz? Bu işlem ayarları, hedefi, seviyeyi ve deneyimi sıfırlayacak ve oluşturma tarihini şimdi olarak ayarlayacaktır. Alışkanlıklarınız ve görevleriniz etkilenmeyecektir. Bu işlem geri alınamaz.';
+  String get resetConfirmationMessage => 'İlerlemenizi sıfırlamak istediğinizden emin misiniz? Bu, ayarları, hedefi, seviyeyi ve tecrübeyi sıfırlayacak ve oluşturma tarihini şimdi olarak ayarlayacaktır. Ancak alışkanlıklarınız ve görevleriniz etkilenmeyecektir. Bu işlem geri alınamaz.';
 
   @override
   String get resetSuccess => 'İlerleme verileri başarıyla sıfırlandı!';

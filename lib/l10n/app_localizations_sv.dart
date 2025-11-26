@@ -9,7 +9,7 @@ class AppLocalizationsSv extends AppLocalizations {
   AppLocalizationsSv([String locale = 'sv']) : super(locale);
 
   @override
-  String get appTitle => 'Vanebaserad Nivåuppgång!';
+  String get appTitle => 'Vanor för att Nivå Upp!';
 
   @override
   String get home => 'Hem';
@@ -18,31 +18,31 @@ class AppLocalizationsSv extends AppLocalizations {
   String get settings => 'Inställningar';
 
   @override
-  String get addHabit => 'Lägg till vana';
+  String get addHabit => 'Lägg till Van';
 
   @override
-  String get addTask => 'Lägg till uppgift';
+  String get addTask => 'Lägg till Uppgift';
 
   @override
-  String get editHabit => 'Redigera vana';
+  String get editHabit => 'Redigera Van';
 
   @override
-  String get editTask => 'Redigera uppgift';
+  String get editTask => 'Redigera Uppgift';
 
   @override
-  String get toNext => 'Till nästa';
+  String get toNext => 'Nästa';
 
   @override
-  String get completeDayHint => 'Fullför missad dag';
+  String get completeDayHint => 'Slutför Missad Dag';
 
   @override
-  String get markCompletedHabitsHint => 'Markera avslutade vanor för denna dag:';
+  String get markCompletedHabitsHint => 'Markera slutförda vanor för denna dag:';
 
   @override
-  String get skipDayButton => 'Hoppa över denna dag';
+  String get skipDayButton => 'Hoppa över denna Dag';
 
   @override
-  String get completeDayButton => 'Fullför dag';
+  String get completeDayButton => 'Slutför Dag';
 
   @override
   String get scheduleType => 'Schematyp';
@@ -51,25 +51,25 @@ class AppLocalizationsSv extends AppLocalizations {
   String get habits => 'Vanor';
 
   @override
-  String get habitsDone => 'Avslutade vanor';
+  String get habitsDone => 'Vanor Slutförda';
 
   @override
   String get tasks => 'Uppgifter';
 
   @override
-  String get tasksDue => 'Förfallna uppgifter';
+  String get tasksDue => 'Uppgifter Förfaller';
 
   @override
-  String get tasksDone => 'Avslutade uppgifter';
+  String get tasksDone => 'Uppgifter Slutförda';
 
   @override
   String get level => 'Nivå';
 
   @override
-  String get todaysProgress => 'Dagens framsteg';
+  String get todaysProgress => 'Dagens Framsteg';
 
   @override
-  String get experienceShort => 'EP';
+  String get experienceShort => 'ERF';
 
   @override
   String get congratulations => 'Grattis!';
@@ -91,18 +91,16 @@ class AppLocalizationsSv extends AppLocalizations {
   String get goal => 'Mål';
 
   @override
-  String get defaultGoal => 'Nivåuppgradera ditt liv!';
+  String get defaultGoal => 'Nivå upp ditt liv!';
 
   @override
-  String playerProgressToLevel(Object level) {
-    return 'Framsteg till nivå';
-  }
+  String get playerProgressToLevel => 'Framsteg till Nivå';
 
   @override
   String get overdue => 'Försenad';
 
   @override
-  String get goalMotivation => 'Mål motivation';
+  String get goalMotivation => 'Mål Motivation';
 
   @override
   String get goalMotivationHint => 'Vad samlar du erfarenhet för?';
@@ -183,15 +181,15 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String experienceMultiplierDescription(Object multiplier) {
-    return 'Erfarenhetsmultiplikator: $multiplier. Högre värden gör nivåuppgång långsammare';
+    return 'Erfarenhetsmultiplikator: $multiplier. Högre värden gör nivå upp långsammare';
   }
 
   @override
-  String get levelProgressionPreview => 'Förhandsvisning nivåprogression:';
+  String get levelProgressionPreview => 'Nivå Progressions Förhandsvisning:';
 
   @override
   String levelFormula(Object exponent, Object multiplier) {
-    return 'Formel: EP = $multiplier × (Nivå-1)^$exponent';
+    return 'Formel: ERF = $multiplier × (Nivå-1)^$exponent';
   }
 
   @override
@@ -201,10 +199,10 @@ class AppLocalizationsSv extends AppLocalizations {
   String get save => 'Spara';
 
   @override
-  String get habitFormTitle => 'Vanetitel';
+  String get habitFormTitle => 'Van Titel';
 
   @override
-  String get habitFormTitleError => 'Ange en titel';
+  String get habitFormTitleError => 'Vänligen ange en titel';
 
   @override
   String get habitFormDescription => 'Beskrivning';
@@ -213,38 +211,38 @@ class AppLocalizationsSv extends AppLocalizations {
   String get habitFormExperience => 'Erfarenhetspoäng';
 
   @override
-  String get habitFormExperienceError => 'Ange erfarenhet';
+  String get habitFormExperienceError => 'Vänligen ange erfarenhet';
 
   @override
-  String get habitFormNumberError => 'Ange ett giltigt nummer';
+  String get habitFormNumberError => 'Vänligen ange ett giltigt nummer';
 
   @override
-  String get habitFormMinCompletion => 'Minsta fullföljande';
+  String get habitFormMinCompletion => 'Minsta Slutförande';
 
   @override
-  String get habitFormMinCompletionError => 'Ange minsta antal';
+  String get habitFormMinCompletionError => 'Vänligen ange minsta antal';
 
   @override
   String get habitFormMinCountError => 'Minst 1';
 
   @override
-  String get habitFormUpdate => 'Uppdatera vana';
+  String get habitFormUpdate => 'Uppdatera Van';
 
   @override
-  String get habitFormSave => 'Spara vana';
+  String get habitFormSave => 'Spara Van';
 
   @override
-  String get habitFormWeeklyError => 'Välj minst en dag för veckoschema';
+  String get habitFormWeeklyError => 'Vänligen välj minst en dag för veckoschema';
 
   @override
-  String get habitFormMonthlyError => 'Välj minst en dag för månadsschema';
+  String get habitFormMonthlyError => 'Vänligen välj minst en dag för månadsschema';
 
   @override
-  String get habitFormCustomError => 'Välj intervall för anpassat schema';
+  String get habitFormCustomError => 'Vänligen välj intervall för anpassat schema';
 
   @override
   String habitItemExperience(Object experience) {
-    return '$experience EP';
+    return '$experience ERF';
   }
 
   @override
@@ -254,17 +252,17 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String habitItemDoneSequence(Object karma) {
-    return '$karma i rad';
+    return '$karma svit';
   }
 
   @override
-  String get habitItemEditTooltip => 'Redigera vana';
+  String get habitItemEditTooltip => 'Redigera van';
 
   @override
-  String get habitItemDeleteTooltip => 'Ta bort vana';
+  String get habitItemDeleteTooltip => 'Ta bort van';
 
   @override
-  String get habitItemScheduleDaily => 'daglig';
+  String get habitItemScheduleDaily => 'dagligen';
 
   @override
   String get habitItemScheduleWeekly => 'veckovis';
@@ -276,7 +274,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get habitItemScheduleCustom => 'anpassad';
 
   @override
-  String get habitItemDeleteConfirmationTitle => 'Ta bort vana';
+  String get habitItemDeleteConfirmationTitle => 'Ta bort Van';
 
   @override
   String habitItemDeleteConfirmationMessage(Object habitTitle) {
@@ -285,7 +283,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String habitItemDeleteConfirmationWarning(Object xpAmount) {
-    return '⚠️ Detta tar bort $xpAmount EP från din spelare!';
+    return '⚠️ Detta kommer att ta bort $xpAmount ERF från din spelare!';
   }
 
   @override
@@ -295,19 +293,19 @@ class AppLocalizationsSv extends AppLocalizations {
   String get habitItemDeleteConfirmationDelete => 'Ta bort';
 
   @override
-  String get habitsTabEmptyTitle => 'Inga vanor än!';
+  String get habitsTabEmptyTitle => 'Inga vanor ännu!';
 
   @override
-  String get habitsTabEmptySubtitle => 'Tryck på + knappen för att lägga till din första vana';
+  String get habitsTabEmptySubtitle => 'Tryck på + knappen för att lägga till din första van';
 
   @override
-  String get habitsTabOnOtherDaysHeader => 'On other days';
+  String get habitsTabOnOtherDaysHeader => 'På andra dagar';
 
   @override
-  String get taskFormTitle => 'Uppgiftstitel';
+  String get taskFormTitle => 'Uppgift Titel';
 
   @override
-  String get taskFormTitleError => 'Ange en titel';
+  String get taskFormTitleError => 'Vänligen ange en titel';
 
   @override
   String get taskFormDescription => 'Beskrivning';
@@ -316,10 +314,10 @@ class AppLocalizationsSv extends AppLocalizations {
   String get taskFormExperience => 'Erfarenhetspoäng';
 
   @override
-  String get taskFormExperienceError => 'Ange erfarenhet';
+  String get taskFormExperienceError => 'Vänligen ange erfarenhet';
 
   @override
-  String get taskFormNumberError => 'Ange ett giltigt nummer';
+  String get taskFormNumberError => 'Vänligen ange ett giltigt nummer';
 
   @override
   String taskFormDueDateLabel(Object date) {
@@ -327,7 +325,7 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String get taskFormSelectDate => 'Välj datum';
+  String get taskFormSelectDate => 'Välj Datum';
 
   @override
   String taskFormPriorityLabel(Object priority) {
@@ -338,10 +336,10 @@ class AppLocalizationsSv extends AppLocalizations {
   String get taskFormCategory => 'Kategori';
 
   @override
-  String get taskFormUpdate => 'Uppdatera uppgift';
+  String get taskFormUpdate => 'Uppdatera Uppgift';
 
   @override
-  String get taskFormSave => 'Spara uppgift';
+  String get taskFormSave => 'Spara Uppgift';
 
   @override
   String get taskCategoryWork => 'Arbete';
@@ -365,17 +363,17 @@ class AppLocalizationsSv extends AppLocalizations {
   String get taskCategoryOther => 'Annat';
 
   @override
-  String get tasksTabEmptyTitle => 'Inga uppgifter än!';
+  String get tasksTabEmptyTitle => 'Inga uppgifter ännu!';
 
   @override
   String get tasksTabEmptySubtitle => 'Tryck på + knappen för att lägga till din första uppgift';
 
   @override
-  String get tasksTabCompletedHeader => 'Avslutade uppgifter';
+  String get tasksTabCompletedHeader => 'Slutförda Uppgifter';
 
   @override
   String tasksTabExperience(Object experience) {
-    return '$experience EP';
+    return '$experience ERF';
   }
 
   @override
@@ -385,7 +383,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get tasksTabDeleteTooltip => 'Ta bort uppgift';
 
   @override
-  String get tasksTabDeleteConfirmationTitle => 'Ta bort uppgift';
+  String get tasksTabDeleteConfirmationTitle => 'Ta bort Uppgift';
 
   @override
   String tasksTabDeleteConfirmationMessage(Object taskTitle) {
@@ -394,7 +392,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String tasksTabDeleteConfirmationWarning(Object xpAmount) {
-    return '⚠️ Detta tar bort $xpAmount EP från din spelare!';
+    return '⚠️ Detta kommer att ta bort $xpAmount ERF från din spelare!';
   }
 
   @override
@@ -414,31 +412,19 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String tasksTabDueDaysAgo(num days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'för $days dagar sedan',
-      one: 'för $days dag sedan',
-    );
-    return '$_temp0';
+    return 'För $days dagar sedan';
   }
 
   @override
   String tasksTabDueInDays(num days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days dagar',
-      one: '$days dag',
-    );
-    return 'Om $_temp0';
+    return 'Om $days dagar';
   }
 
   @override
   String get scheduleSelectorTitle => 'Schematyp';
 
   @override
-  String get scheduleTypeDaily => 'Daglig';
+  String get scheduleTypeDaily => 'Dagligen';
 
   @override
   String get scheduleTypeWeekly => 'Veckovis';
@@ -447,30 +433,24 @@ class AppLocalizationsSv extends AppLocalizations {
   String get scheduleTypeMonthly => 'Månadsvis';
 
   @override
-  String get scheduleTypeCustom => 'Anpassat intervall';
+  String get scheduleTypeCustom => 'Anpassat Intervall';
 
   @override
   String get scheduleWeeklyTitle => 'Välj dagar:';
 
   @override
-  String get scheduleMonthlyTitle => 'Välj datum i månaden:';
+  String get scheduleMonthlyTitle => 'Välj dagar i månaden:';
 
   @override
   String get scheduleCustomTitle => 'Upprepa varje X:e dag:';
 
   @override
   String scheduleCustomInterval(num days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days dagar',
-      one: '1 dag',
-    );
-    return '$_temp0';
+    return '$days dagar';
   }
 
   @override
-  String get scheduleCustomError => 'Välj intervall';
+  String get scheduleCustomError => 'Vänligen välj intervall';
 
   @override
   String get weekdayMonday => 'Mån';
@@ -494,49 +474,49 @@ class AppLocalizationsSv extends AppLocalizations {
   String get weekdaySunday => 'Sön';
 
   @override
-  String get sortByTitle => 'By name';
+  String get sortByTitle => 'Namn';
 
   @override
-  String get sortByExperience => 'By experience';
+  String get sortByExperience => 'Erfarenhet';
 
   @override
-  String get sortByCompletionStatus => 'By completion status';
+  String get sortByScheduleType => 'Schema';
 
   @override
-  String get sortByScheduleType => 'By schedule type';
+  String get sortByCompletionStatus => 'Slutförande';
 
   @override
-  String get sortByKarma => 'By streak';
+  String get sortByKarma => 'Svit';
 
   @override
-  String get sortByCompletionCount => 'By completion number';
+  String get sortByCompletionCount => 'Antal';
 
   @override
-  String get sortByMinCompletionCount => 'By min for completion';
+  String get sortByMinCompletionCount => 'Minimum';
 
   @override
-  String get sortByPriority => 'By priority';
+  String get sortByPriority => 'Prioritet';
 
   @override
-  String get sortByCategory => 'By category';
+  String get sortByCategory => 'Kategori';
 
   @override
-  String get sortByDueDate => 'By due date';
+  String get sortByDueDate => 'Förfallodatum';
 
   @override
-  String get sortAscending => 'Ascending sort';
+  String get sortAscending => 'Stigande sortering';
 
   @override
-  String get sortDescending => 'Descending sort';
+  String get sortDescending => 'Fallande sortering';
 
   @override
-  String get resetProgress => 'Återställ framsteg';
+  String get resetProgress => 'Återställ Framsteg';
 
   @override
   String get resetConfirmationTitle => 'Återställ';
 
   @override
-  String get resetConfirmationMessage => 'Är du säker på att du vill återställa ditt framsteg? Detta återställer inställningar, mål, nivå och erfarenhet och sätter skapandedatum till nu. Dina vanor och uppgifter påverkas dock inte. Denna åtgärd kan inte ångras.';
+  String get resetConfirmationMessage => 'Är du säker på att du vill återställa dina framsteg? Detta kommer att återställa inställningar, mål, nivå och erfarenhet och ställa in skapandedatum till nu. Dina vanor och uppgifter påverkas dock inte. Denna åtgärd kan inte ångras.';
 
   @override
   String get resetSuccess => 'Framstegsdata har återställts framgångsrikt!';

@@ -9,7 +9,7 @@ class AppLocalizationsAr extends AppLocalizations {
   AppLocalizationsAr([String locale = 'ar']) : super(locale);
 
   @override
-  String get appTitle => 'عادة للقيام ببعض المستويات المتقدمة!';
+  String get appTitle => 'اكتسب عادة للارتقاء بمستواك!';
 
   @override
   String get home => 'الرئيسية';
@@ -30,19 +30,19 @@ class AppLocalizationsAr extends AppLocalizations {
   String get editTask => 'تعديل المهمة';
 
   @override
-  String get toNext => 'إلى التالي';
+  String get toNext => 'التالي';
 
   @override
-  String get completeDayHint => 'إكمال اليوم الفائت';
+  String get completeDayHint => 'أكمل يومًا فاتك';
 
   @override
-  String get markCompletedHabitsHint => 'ضع علامة على العادات المكتملة لهذا اليوم:';
+  String get markCompletedHabitsHint => 'حدد العادات المُكتملة لهذا اليوم:';
 
   @override
   String get skipDayButton => 'تخطي هذا اليوم';
 
   @override
-  String get completeDayButton => 'إكمال اليوم';
+  String get completeDayButton => 'أكمل اليوم';
 
   @override
   String get scheduleType => 'نوع الجدول';
@@ -51,7 +51,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get habits => 'العادات';
 
   @override
-  String get habitsDone => 'العادات المكتملة';
+  String get habitsDone => 'العادات المُكتملة';
 
   @override
   String get tasks => 'المهام';
@@ -60,7 +60,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tasksDue => 'المهام المستحقة';
 
   @override
-  String get tasksDone => 'المهام المكتملة';
+  String get tasksDone => 'المهام المُكتملة';
 
   @override
   String get level => 'المستوى';
@@ -76,7 +76,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String levelReached(Object level) {
-    return 'لقد وصلت إلى المستوى $level!';
+    return 'لقد وصلت للمستوى $level!';
   }
 
   @override
@@ -84,25 +84,23 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String dontForgetToUseAchievenents(Object goal) {
-    return 'لا تنس استخدام إنجازاتك لـ... $goal!';
+    return 'لا تنسَ استخدام إنجازاتك ل... $goal!';
   }
 
   @override
   String get goal => 'الهدف';
 
   @override
-  String get defaultGoal => 'تطوير مستوى حياتك!';
+  String get defaultGoal => 'ارتقِ بمستوى حياتك!';
 
   @override
-  String playerProgressToLevel(Object level) {
-    return 'التقدم نحو المستوى';
-  }
+  String get playerProgressToLevel => 'التقدم للمستوى';
 
   @override
   String get overdue => 'متأخر';
 
   @override
-  String get goalMotivation => 'الدافع الهدف';
+  String get goalMotivation => 'تحفيز الهدف';
 
   @override
   String get goalMotivationHint => 'لماذا تكتسب الخبرة؟';
@@ -175,7 +173,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String curveExponentDescription(Object exponent) {
-    return 'أس المنحنى: $exponent. القيم <1 تجعل المستويات الأولى أسهل، والقيم >1 تجعل المستويات اللاحقة أسهل';
+    return 'أس المنحنى: $exponent. القيم <1 تجعل المستويات الأولى أسهل، >1 تجعل المستويات المتقدمة أسهل';
   }
 
   @override
@@ -183,11 +181,11 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String experienceMultiplierDescription(Object multiplier) {
-    return 'مضاعف الخبرة: $multiplier. القيم الأعلى تجعل التقدم في المستويات أبطأ';
+    return 'مضاعف الخبرة: $multiplier. القيم الأعلى تجعل الصعود مستوى أبطأ';
   }
 
   @override
-  String get levelProgressionPreview => 'معاينة تقدم المستوى:';
+  String get levelProgressionPreview => 'معاينة تقدم المستويات:';
 
   @override
   String levelFormula(Object exponent, Object multiplier) {
@@ -222,7 +220,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get habitFormMinCompletion => 'الحد الأدنى للإكمال';
 
   @override
-  String get habitFormMinCompletionError => 'يرجى إدخال الحد الأدنى للعدد';
+  String get habitFormMinCompletionError => 'يرجى إدخال الحد الأدنى';
 
   @override
   String get habitFormMinCountError => 'على الأقل 1';
@@ -240,7 +238,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get habitFormMonthlyError => 'يرجى اختيار يوم واحد على الأقل للجدول الشهري';
 
   @override
-  String get habitFormCustomError => 'يرجى اختيار الفترة للجدول المخصص';
+  String get habitFormCustomError => 'يرجى اختيار مدة للجدول المخصص';
 
   @override
   String habitItemExperience(Object experience) {
@@ -298,10 +296,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get habitsTabEmptyTitle => 'لا توجد عادات بعد!';
 
   @override
-  String get habitsTabEmptySubtitle => 'انقر على زر + لإضافة عادتك الأولى';
+  String get habitsTabEmptySubtitle => 'انقر على زر + لإضافة أول عادة لك';
 
   @override
-  String get habitsTabOnOtherDaysHeader => 'On other days';
+  String get habitsTabOnOtherDaysHeader => 'في أيام أخرى';
 
   @override
   String get taskFormTitle => 'عنوان المهمة';
@@ -327,7 +325,7 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get taskFormSelectDate => 'اختر التاريخ';
+  String get taskFormSelectDate => 'اختر تاريخ';
 
   @override
   String taskFormPriorityLabel(Object priority) {
@@ -368,7 +366,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tasksTabEmptyTitle => 'لا توجد مهام بعد!';
 
   @override
-  String get tasksTabEmptySubtitle => 'انقر على زر + لإضافة مهمتك الأولى';
+  String get tasksTabEmptySubtitle => 'انقر على زر + لإضافة أول مهمة لك';
 
   @override
   String get tasksTabCompletedHeader => 'المهام المكتملة';
@@ -407,7 +405,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tasksTabDueToday => 'اليوم';
 
   @override
-  String get tasksTabDueTomorrow => 'غداً';
+  String get tasksTabDueTomorrow => 'غدًا';
 
   @override
   String get tasksTabDueYesterday => 'أمس';
@@ -435,7 +433,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get scheduleTypeMonthly => 'شهري';
 
   @override
-  String get scheduleTypeCustom => 'فترة مخصصة';
+  String get scheduleTypeCustom => 'مدة مخصصة';
 
   @override
   String get scheduleWeeklyTitle => 'اختر الأيام:';
@@ -448,21 +446,11 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String scheduleCustomInterval(num days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days يوم',
-      many: '$days يوماً',
-      few: '$days أيام',
-      two: 'يومان',
-      one: '1 يوم',
-      zero: '0 يوم',
-    );
-    return '$_temp0';
+    return '$days يوم';
   }
 
   @override
-  String get scheduleCustomError => 'يرجى اختيار الفترة';
+  String get scheduleCustomError => 'يرجى اختيار المدة';
 
   @override
   String get weekdayMonday => 'الاثنين';
@@ -486,50 +474,50 @@ class AppLocalizationsAr extends AppLocalizations {
   String get weekdaySunday => 'الأحد';
 
   @override
-  String get sortByTitle => 'By name';
+  String get sortByTitle => 'الاسم';
 
   @override
-  String get sortByExperience => 'By experience';
+  String get sortByExperience => 'الخبرة';
 
   @override
-  String get sortByCompletionStatus => 'By completion status';
+  String get sortByScheduleType => 'الجدول';
 
   @override
-  String get sortByScheduleType => 'By schedule type';
+  String get sortByCompletionStatus => 'الإكمال';
 
   @override
-  String get sortByKarma => 'By streak';
+  String get sortByKarma => 'السلسلة';
 
   @override
-  String get sortByCompletionCount => 'By completion number';
+  String get sortByCompletionCount => 'العدد';
 
   @override
-  String get sortByMinCompletionCount => 'By min for completion';
+  String get sortByMinCompletionCount => 'الحد الأدنى';
 
   @override
-  String get sortByPriority => 'By priority';
+  String get sortByPriority => 'الأولوية';
 
   @override
-  String get sortByCategory => 'By category';
+  String get sortByCategory => 'الفئة';
 
   @override
-  String get sortByDueDate => 'By due date';
+  String get sortByDueDate => 'تاريخ الاستحقاق';
 
   @override
-  String get sortAscending => 'Ascending sort';
+  String get sortAscending => 'ترتيب تصاعدي';
 
   @override
-  String get sortDescending => 'Descending sort';
+  String get sortDescending => 'ترتيب تنازلي';
 
   @override
-  String get resetProgress => 'إعادة تعيين التقدم';
+  String get resetProgress => 'إعادة الضبط';
 
   @override
-  String get resetConfirmationTitle => 'إعادة تعيين';
+  String get resetConfirmationTitle => 'إعادة الضبط';
 
   @override
-  String get resetConfirmationMessage => 'هل أنت متأكد من رغبتك في إعادة تعيين تقدمك؟ هذا سيعيد تعيين الإعدادات، الهدف، المستوى والخبرة وسيحول تاريخ الإنشاء إلى الآن. عاداتك ومهامك لن تتأثر. لا يمكن التراجع عن هذا الإجراء.';
+  String get resetConfirmationMessage => 'هل أنت متأكد من رغبتك في إعادة ضبط تقدمك؟ هذا سيعيد الإعدادات، الهدف، المستوى والخبرة وسيضع تاريخ الإنشاء إلى الآن. عاداتك ومهامك لن تتأثر. لا يمكن التراجع عن هذا الإجراء.';
 
   @override
-  String get resetSuccess => 'تم إعادة تعيين بيانات التقدم بنجاح!';
+  String get resetSuccess => 'تمت إعادة ضبط بيانات التقدم بنجاح!';
 }

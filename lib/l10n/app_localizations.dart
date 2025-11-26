@@ -297,7 +297,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Progress to Level'**
-  String playerProgressToLevel(Object level);
+  String get playerProgressToLevel;
 
   /// No description provided for @overdue.
   ///
@@ -992,61 +992,61 @@ abstract class AppLocalizations {
   /// No description provided for @sortByTitle.
   ///
   /// In en, this message translates to:
-  /// **'By name'**
+  /// **'Name'**
   String get sortByTitle;
 
   /// No description provided for @sortByExperience.
   ///
   /// In en, this message translates to:
-  /// **'By experience'**
+  /// **'Experience'**
   String get sortByExperience;
-
-  /// No description provided for @sortByCompletionStatus.
-  ///
-  /// In en, this message translates to:
-  /// **'By completion status'**
-  String get sortByCompletionStatus;
 
   /// No description provided for @sortByScheduleType.
   ///
   /// In en, this message translates to:
-  /// **'By schedule type'**
+  /// **'Schedule'**
   String get sortByScheduleType;
+
+  /// No description provided for @sortByCompletionStatus.
+  ///
+  /// In en, this message translates to:
+  /// **'Completion'**
+  String get sortByCompletionStatus;
 
   /// No description provided for @sortByKarma.
   ///
   /// In en, this message translates to:
-  /// **'By streak'**
+  /// **'Streak'**
   String get sortByKarma;
 
   /// No description provided for @sortByCompletionCount.
   ///
   /// In en, this message translates to:
-  /// **'By completion number'**
+  /// **'Сount'**
   String get sortByCompletionCount;
 
   /// No description provided for @sortByMinCompletionCount.
   ///
   /// In en, this message translates to:
-  /// **'By min for completion'**
+  /// **'Min'**
   String get sortByMinCompletionCount;
 
   /// No description provided for @sortByPriority.
   ///
   /// In en, this message translates to:
-  /// **'By priority'**
+  /// **'Priority'**
   String get sortByPriority;
 
   /// No description provided for @sortByCategory.
   ///
   /// In en, this message translates to:
-  /// **'By category'**
+  /// **'Category'**
   String get sortByCategory;
 
   /// No description provided for @sortByDueDate.
   ///
   /// In en, this message translates to:
-  /// **'By due date'**
+  /// **'Due date'**
   String get sortByDueDate;
 
   /// No description provided for @sortAscending.

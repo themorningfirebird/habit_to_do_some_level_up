@@ -9,7 +9,7 @@ class AppLocalizationsHi extends AppLocalizations {
   AppLocalizationsHi([String locale = 'hi']) : super(locale);
 
   @override
-  String get appTitle => 'आदत से स्तर ऊपर!';
+  String get appTitle => 'लेवल अप करने की आदत डालो!';
 
   @override
   String get home => 'होम';
@@ -21,16 +21,16 @@ class AppLocalizationsHi extends AppLocalizations {
   String get addHabit => 'आदत जोड़ें';
 
   @override
-  String get addTask => 'कार्य जोड़ें';
+  String get addTask => 'टास्क जोड़ें';
 
   @override
   String get editHabit => 'आदत संपादित करें';
 
   @override
-  String get editTask => 'कार्य संपादित करें';
+  String get editTask => 'टास्क संपादित करें';
 
   @override
-  String get toNext => 'अगले तक';
+  String get toNext => 'अगला';
 
   @override
   String get completeDayHint => 'छूटा हुआ दिन पूरा करें';
@@ -45,7 +45,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get completeDayButton => 'दिन पूरा करें';
 
   @override
-  String get scheduleType => 'अनुसूची प्रकार';
+  String get scheduleType => 'शेड्यूल प्रकार';
 
   @override
   String get habits => 'आदतें';
@@ -54,13 +54,13 @@ class AppLocalizationsHi extends AppLocalizations {
   String get habitsDone => 'आदतें पूरी';
 
   @override
-  String get tasks => 'कार्य';
+  String get tasks => 'टास्क';
 
   @override
-  String get tasksDue => 'कार्य बाकी';
+  String get tasksDue => 'बकाया टास्क';
 
   @override
-  String get tasksDone => 'कार्य पूरे';
+  String get tasksDone => 'टास्क पूरे';
 
   @override
   String get level => 'स्तर';
@@ -91,27 +91,25 @@ class AppLocalizationsHi extends AppLocalizations {
   String get goal => 'लक्ष्य';
 
   @override
-  String get defaultGoal => 'अपनी जिंदगी का स्तर ऊपर करो!';
+  String get defaultGoal => 'अपनी जिंदगी को लेवल अप करो!';
 
   @override
-  String playerProgressToLevel(Object level) {
-    return 'स्तर तक प्रगति';
-  }
+  String get playerProgressToLevel => 'स्तर तक प्रगति';
 
   @override
-  String get overdue => 'विलंबित';
+  String get overdue => 'ओवरड्यू';
 
   @override
   String get goalMotivation => 'लक्ष्य प्रेरणा';
 
   @override
-  String get goalMotivationHint => 'आप अनुभव किसके लिए जमा कर रहे हैं?';
+  String get goalMotivationHint => 'आप अनुभव किसलिए जमा कर रहे हैं?';
 
   @override
   String get language => 'भाषा';
 
   @override
-  String get english => 'अंग्रेज़ी';
+  String get english => 'अंग्रेजी';
 
   @override
   String get russian => 'रूसी';
@@ -147,7 +145,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get finnish => 'फिनिश';
 
   @override
-  String get armenian => 'आर्मेनियाई';
+  String get armenian => 'आर्मेनियन';
 
   @override
   String get turkish => 'तुर्की';
@@ -159,7 +157,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get japanese => 'जापानी';
 
   @override
-  String get korean => 'कोरियाई';
+  String get korean => 'कोरियन';
 
   @override
   String get hindi => 'हिंदी';
@@ -171,11 +169,11 @@ class AppLocalizationsHi extends AppLocalizations {
   String get hebrew => 'हिब्रू';
 
   @override
-  String get curveExponent => 'वक्र घातांक';
+  String get curveExponent => 'कर्व एक्सपोनेंट';
 
   @override
   String curveExponentDescription(Object exponent) {
-    return 'वक्र घातांक: $exponent. 1 से कम मान शुरुआती स्तरों को आसान बनाते हैं, 1 से अधिक मान बाद के स्तरों को आसान बनाते हैं';
+    return 'कर्व एक्सपोनेंट: $exponent. <1 वैल्यू शुरुआती लेवल आसान बनाती है, >1 बाद के लेवल आसान बनाती है';
   }
 
   @override
@@ -183,40 +181,40 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String experienceMultiplierDescription(Object multiplier) {
-    return 'अनुभव गुणक: $multiplier. उच्च मान स्तर बढ़ाना धीमा करते हैं';
+    return 'अनुभव गुणक: $multiplier. उच्च वैल्यू लेवल अप धीमा करती है';
   }
 
   @override
-  String get levelProgressionPreview => 'स्तर प्रगति पूर्वावलोकन:';
+  String get levelProgressionPreview => 'लेवल प्रोग्रेशन प्रिव्यू:';
 
   @override
   String levelFormula(Object exponent, Object multiplier) {
-    return 'सूत्र: EXP = $multiplier × (स्तर-1)^$exponent';
+    return 'फॉर्मूला: एक्सपी = $multiplier × (लेवल-1)^$exponent';
   }
 
   @override
-  String get cancel => 'रद्द करें';
+  String get cancel => 'कैंसल';
 
   @override
-  String get save => 'सेव करें';
+  String get save => 'सेव';
 
   @override
   String get habitFormTitle => 'आदत का शीर्षक';
 
   @override
-  String get habitFormTitleError => 'कृपया एक शीर्षक दर्ज करें';
+  String get habitFormTitleError => 'कृपया शीर्षक दर्ज करें';
 
   @override
   String get habitFormDescription => 'विवरण';
 
   @override
-  String get habitFormExperience => 'अनुभव अंक';
+  String get habitFormExperience => 'अनुभव पॉइंट्स';
 
   @override
   String get habitFormExperienceError => 'कृपया अनुभव दर्ज करें';
 
   @override
-  String get habitFormNumberError => 'कृपया एक वैध संख्या दर्ज करें';
+  String get habitFormNumberError => 'कृपया वैलिड नंबर दर्ज करें';
 
   @override
   String get habitFormMinCompletion => 'न्यूनतम पूर्णता';
@@ -234,13 +232,13 @@ class AppLocalizationsHi extends AppLocalizations {
   String get habitFormSave => 'आदत सेव करें';
 
   @override
-  String get habitFormWeeklyError => 'कृपया साप्ताहिक अनुसूची के लिए कम से कम एक दिन चुनें';
+  String get habitFormWeeklyError => 'कृपया साप्ताहिक शेड्यूल के लिए कम से कम एक दिन चुनें';
 
   @override
-  String get habitFormMonthlyError => 'कृपया मासिक अनुसूची के लिए कम से कम एक दिन चुनें';
+  String get habitFormMonthlyError => 'कृपया मासिक शेड्यूल के लिए कम से कम एक दिन चुनें';
 
   @override
-  String get habitFormCustomError => 'कृपया कस्टम अनुसूची के लिए अंतराल चुनें';
+  String get habitFormCustomError => 'कृपया कस्टम शेड्यूल के लिए अंतराल चुनें';
 
   @override
   String habitItemExperience(Object experience) {
@@ -249,7 +247,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String habitItemMinCompletion(Object minCompletionCount) {
-    return 'न्यून. $minCompletionCount';
+    return 'न्यून $minCompletionCount';
   }
 
   @override
@@ -261,7 +259,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get habitItemEditTooltip => 'आदत संपादित करें';
 
   @override
-  String get habitItemDeleteTooltip => 'आदत हटाएं';
+  String get habitItemDeleteTooltip => 'आदत डिलीट करें';
 
   @override
   String get habitItemScheduleDaily => 'दैनिक';
@@ -276,54 +274,54 @@ class AppLocalizationsHi extends AppLocalizations {
   String get habitItemScheduleCustom => 'कस्टम';
 
   @override
-  String get habitItemDeleteConfirmationTitle => 'आदत हटाएं';
+  String get habitItemDeleteConfirmationTitle => 'आदत डिलीट करें';
 
   @override
   String habitItemDeleteConfirmationMessage(Object habitTitle) {
-    return 'क्या आप वाकई \"$habitTitle\" हटाना चाहते हैं?';
+    return 'क्या आप वाकई \"$habitTitle\" डिलीट करना चाहते हैं?';
   }
 
   @override
   String habitItemDeleteConfirmationWarning(Object xpAmount) {
-    return '⚠️ इससे आपके प्लेयर से $xpAmount एक्सपी हट जाएगी!';
+    return '⚠️ यह आपके प्लेयर से $xpAmount एक्सपी हटा देगा!';
   }
 
   @override
-  String get habitItemDeleteConfirmationCancel => 'रद्द करें';
+  String get habitItemDeleteConfirmationCancel => 'कैंसल';
 
   @override
-  String get habitItemDeleteConfirmationDelete => 'हटाएं';
+  String get habitItemDeleteConfirmationDelete => 'डिलीट';
 
   @override
   String get habitsTabEmptyTitle => 'अभी तक कोई आदत नहीं!';
 
   @override
-  String get habitsTabEmptySubtitle => 'अपनी पहली आदत जोड़ने के लिए + बटन दबाएं';
+  String get habitsTabEmptySubtitle => 'पहली आदत जोड़ने के लिए + बटन टैप करें';
 
   @override
-  String get habitsTabOnOtherDaysHeader => 'On other days';
+  String get habitsTabOnOtherDaysHeader => 'अन्य दिनों में';
 
   @override
-  String get taskFormTitle => 'कार्य का शीर्षक';
+  String get taskFormTitle => 'टास्क का शीर्षक';
 
   @override
-  String get taskFormTitleError => 'कृपया एक शीर्षक दर्ज करें';
+  String get taskFormTitleError => 'कृपया शीर्षक दर्ज करें';
 
   @override
   String get taskFormDescription => 'विवरण';
 
   @override
-  String get taskFormExperience => 'अनुभव अंक';
+  String get taskFormExperience => 'अनुभव पॉइंट्स';
 
   @override
   String get taskFormExperienceError => 'कृपया अनुभव दर्ज करें';
 
   @override
-  String get taskFormNumberError => 'कृपया एक वैध संख्या दर्ज करें';
+  String get taskFormNumberError => 'कृपया वैलिड नंबर दर्ज करें';
 
   @override
   String taskFormDueDateLabel(Object date) {
-    return 'नियत तारीख: $date';
+    return 'ड्यू डेट: $date';
   }
 
   @override
@@ -338,10 +336,10 @@ class AppLocalizationsHi extends AppLocalizations {
   String get taskFormCategory => 'श्रेणी';
 
   @override
-  String get taskFormUpdate => 'कार्य अपडेट करें';
+  String get taskFormUpdate => 'टास्क अपडेट करें';
 
   @override
-  String get taskFormSave => 'कार्य सेव करें';
+  String get taskFormSave => 'टास्क सेव करें';
 
   @override
   String get taskCategoryWork => 'काम';
@@ -365,13 +363,13 @@ class AppLocalizationsHi extends AppLocalizations {
   String get taskCategoryOther => 'अन्य';
 
   @override
-  String get tasksTabEmptyTitle => 'अभी तक कोई कार्य नहीं!';
+  String get tasksTabEmptyTitle => 'अभी तक कोई टास्क नहीं!';
 
   @override
-  String get tasksTabEmptySubtitle => 'अपना पहला कार्य जोड़ने के लिए + बटन दबाएं';
+  String get tasksTabEmptySubtitle => 'पहला टास्क जोड़ने के लिए + बटन टैप करें';
 
   @override
-  String get tasksTabCompletedHeader => 'पूर्ण कार्य';
+  String get tasksTabCompletedHeader => 'पूरे किए गए टास्क';
 
   @override
   String tasksTabExperience(Object experience) {
@@ -379,29 +377,29 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get tasksTabEditTooltip => 'कार्य संपादित करें';
+  String get tasksTabEditTooltip => 'टास्क संपादित करें';
 
   @override
-  String get tasksTabDeleteTooltip => 'कार्य हटाएं';
+  String get tasksTabDeleteTooltip => 'टास्क डिलीट करें';
 
   @override
-  String get tasksTabDeleteConfirmationTitle => 'कार्य हटाएं';
+  String get tasksTabDeleteConfirmationTitle => 'टास्क डिलीट करें';
 
   @override
   String tasksTabDeleteConfirmationMessage(Object taskTitle) {
-    return 'क्या आप वाकई \"$taskTitle\" हटाना चाहते हैं?';
+    return 'क्या आप वाकई \"$taskTitle\" डिलीट करना चाहते हैं?';
   }
 
   @override
   String tasksTabDeleteConfirmationWarning(Object xpAmount) {
-    return '⚠️ इससे आपके प्लेयर से $xpAmount एक्सपी हट जाएगी!';
+    return '⚠️ यह आपके प्लेयर से $xpAmount एक्सपी हटा देगा!';
   }
 
   @override
-  String get tasksTabDeleteConfirmationCancel => 'रद्द करें';
+  String get tasksTabDeleteConfirmationCancel => 'कैंसल';
 
   @override
-  String get tasksTabDeleteConfirmationDelete => 'हटाएं';
+  String get tasksTabDeleteConfirmationDelete => 'डिलीट';
 
   @override
   String get tasksTabDueToday => 'आज';
@@ -423,7 +421,7 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get scheduleSelectorTitle => 'अनुसूची प्रकार';
+  String get scheduleSelectorTitle => 'शेड्यूल प्रकार';
 
   @override
   String get scheduleTypeDaily => 'दैनिक';
@@ -444,17 +442,11 @@ class AppLocalizationsHi extends AppLocalizations {
   String get scheduleMonthlyTitle => 'महीने के दिन चुनें:';
 
   @override
-  String get scheduleCustomTitle => 'हर X दिनों में दोहराएं:';
+  String get scheduleCustomTitle => 'हर X दिन दोहराएं:';
 
   @override
   String scheduleCustomInterval(num days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days दिन',
-      one: '1 दिन',
-    );
-    return '$_temp0';
+    return '$days दिन';
   }
 
   @override
@@ -482,40 +474,40 @@ class AppLocalizationsHi extends AppLocalizations {
   String get weekdaySunday => 'रवि';
 
   @override
-  String get sortByTitle => 'By name';
+  String get sortByTitle => 'नाम';
 
   @override
-  String get sortByExperience => 'By experience';
+  String get sortByExperience => 'अनुभव';
 
   @override
-  String get sortByCompletionStatus => 'By completion status';
+  String get sortByScheduleType => 'शेड्यूल';
 
   @override
-  String get sortByScheduleType => 'By schedule type';
+  String get sortByCompletionStatus => 'पूर्णता';
 
   @override
-  String get sortByKarma => 'By streak';
+  String get sortByKarma => 'स्ट्रीक';
 
   @override
-  String get sortByCompletionCount => 'By completion number';
+  String get sortByCompletionCount => 'संख्या';
 
   @override
-  String get sortByMinCompletionCount => 'By min for completion';
+  String get sortByMinCompletionCount => 'न्यूनतम';
 
   @override
-  String get sortByPriority => 'By priority';
+  String get sortByPriority => 'प्राथमिकता';
 
   @override
-  String get sortByCategory => 'By category';
+  String get sortByCategory => 'श्रेणी';
 
   @override
-  String get sortByDueDate => 'By due date';
+  String get sortByDueDate => 'ड्यू डेट';
 
   @override
-  String get sortAscending => 'Ascending sort';
+  String get sortAscending => 'आरोही क्रम';
 
   @override
-  String get sortDescending => 'Descending sort';
+  String get sortDescending => 'अवरोही क्रम';
 
   @override
   String get resetProgress => 'प्रगति रीसेट करें';
@@ -524,8 +516,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get resetConfirmationTitle => 'रीसेट';
 
   @override
-  String get resetConfirmationMessage => 'क्या आप वाकई अपनी प्रगति रीसेट करना चाहते हैं? इससे सेटिंग्स, लक्ष्य, स्तर और अनुभव रीसेट हो जाएंगे और निर्माण तिथि अब सेट हो जाएगी। हालांकि, आपकी आदतें और कार्य प्रभावित नहीं होंगे। इस कार्रवाई को पूर्ववत नहीं किया जा सकता।';
+  String get resetConfirmationMessage => 'क्या आप वाकई अपनी प्रगति रीसेट करना चाहते हैं? यह सेटिंग्स, लक्ष्य, लेवल और अनुभव रीसेट कर देगा और निर्माण तिथि को अभी पर सेट कर देगा। हालांकि, आपकी आदतें और टास्क प्रभावित नहीं होंगे। इस क्रिया को पूर्ववत नहीं किया जा सकता।';
 
   @override
-  String get resetSuccess => 'प्रगति डेटा सफलतापूर्वक रीसेट कर दिया गया है!';
+  String get resetSuccess => 'प्रगति डेटा सफलतापूर्वक रीसेट हो गया!';
 }
